@@ -1,0 +1,43 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Главное меню
+
+				.container-dashboard__content
+					.aside-menu.aside-menu--active.visible(data-modal="main-menu")
+						.aside-menu__close(data-close)
+							.btn-close
+								svg.svg-close
+									use(xlink:href="../img/svg-sprite.svg#svgClose")
+						.aside-menu__content
+							//====== шапка меню  =====
+							.person-block
+								.person-block__top
+									img(src="../img/avatar.jpg", width="48" height="48" alt="alt")
+								.person-block__center.title-20 Дмитрий Лукьян
+								.person-block__bottom.body-2 +7 (123) 456-78-90
+							
+							+menu-block([{svgClass: 'svg-cat', spritId: 'Cat', text: 'Каталог услуг'}, {svgClass: 'svg-hist', spritId: 'Hist', text: 'История заказов'}])
+
+							+menu-block([{svgClass: 'svg-faq', spritId: 'Faq', text: 'О сервисе'}, {svgClass: 'svg-persone', spritId: 'Persone', text: 'Партнёрам'}, {svgClass: 'svg-book', spritId: 'Book', text: 'Частые вопросы'}, {svgClass: 'svg-map', spritId: 'Map', text: 'Контакты'}], 'Информация')
+
+							+menu-block([{svgClass: 'svg-bell', spritId: 'Bell', text: 'Уведомления'}, {svgClass: 'svg-lock', spritId: 'Lock', text: 'Изменить пароль'}, {svgClass: 'svg-out', spritId: 'Out', text: 'Выход'}], 'Аккаунт и безопасность')
+		script(src="../js/main.js")

@@ -1,0 +1,68 @@
+.svg-group{
+	display: flex;
+	align-items:center;
+	svg + *{margin-left: 16px;}
+}
+
+.icon-text {
+	height: 40px;
+	color: #1E4159;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	transition: .3s;
+	padding-left: 11px;
+	padding-right: 11px;
+	border-radius: 4px;
+	white-space: nowrap;
+
+	&__img {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	&>*+* {
+		margin-left: 11px;
+	}
+
+	svg {
+		fill: #7c7c7c;
+	}
+
+	&:hover {
+		background-color: #F3F3F3;
+	}
+
+	span:first-child {
+		width: 24px;
+		height: 24px;
+
+		svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+.price-block {
+	min-width: 80px;
+	&-new {
+		font-size: 14px;
+		line-height: 1rem;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+		color: #333333;
+		font-family: $rm;
+	}
+
+	&-old {
+		font-size: 12px;
+		line-height: 1rem;
+		letter-spacing: 0.2px;
+		text-decoration-line: line-through;
+		color: #B5B5B5;
+	}
+}

@@ -1,0 +1,247 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Кнопки
+
+				.container-dashboard__content
+					ul.ui-buttons
+						li
+							+button('a', '#', 'Список заказов', '')
+							p  Кнопка - тег ссылка
+							pre.
+								+button('a', '#', 'Список заказов', '')
+								
+						li
+							+button('button', '', 'Список заказов', 'button--blue')
+							p  Кнопка - тег кнопки
+							pre.
+								+button('button', '', 'Список заказов', 'button--blue')
+						li
+							+button-flex('a', '#', 'button--reverse button--left', 'Каталог услуг',  'cat', 'Cat')
+							pre.
+								+button-flex('a', '#', 'button--reverse button--left', 'Каталог услуг',  'cat', 'Cat')
+							p параметры миксина: 
+								ul
+									li 1. тег (ссылка или кнопка)
+									li 2. адрес ссылки (если кнопка, то параметр пустой)
+									li 3. доп классы 
+										ul
+											li a) button--blue - цвет кнопки
+											li б) button--reverse - переставить иконку левее текста кнопки
+											li в) button--left - выстроить контент по левому краю (по умолчанию -центр)
+									li 4. текст кнопки
+									li 5. класс svg иконки
+									li 6. id svg-иконки из спрайта (совпадает с клаасом, только с загл буквы)
+							
+							
+						li
+							+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+							pre.
+								+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+						li
+						li
+							+button-flex('button', '', 'button--light', 'Получить рекомендации',  'chevron', 'Chevron')
+							pre.
+								+button-flex('button', '', 'button--light', 'Получить рекомендации',  'chevron', 'Chevron')
+						li
+							+double-button('Оплатить', '99 &#8381;')
+							pre.
+								+double-button('Оплатить', '99 &#8381;')
+						li
+							.button-group-1
+								.button-group__top
+									.text-12 6 комплектов документов 
+									.title-20 Итог: 23 000 &#8381;
+								+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+							pre.
+								.button-group-1
+									.button-group__top
+										.text-12 6 комплектов документов 
+										.title-20 Итог: 23 000 &#8381;
+									+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+						li
+							.button-group-2
+								+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+								.button-group__bottom
+									a(href="#").title-14.text-blue Нет данных о владельце?
+									
+							pre.
+								.button-group-2
+									+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+									.button-group__bottom
+										a(href="#").title-14.text-blue Нет данных о владельце?
+						li
+							.button-group-2
+								+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+								.button-group__bottom
+									a(href="#").text-12.text-grey Потребуется указать Фамилию Имя Отчество и дату рождения владельца
+									
+							pre.
+								.button-group-2
+									+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+									.button-group__bottom
+										a(href="#").text-12.text-grey Потребуется указать Фамилию Имя Отчество и дату рождения владельца
+						li
+							.button-group-2
+								.button-group__top.text-center
+									.text-12.text-dark Рекомендуемый для Вас состав проверки
+								+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+								
+							pre.
+								.button-group-2
+									.button-group__top.text-center
+										.text-12.text-dark Рекомендуемый для Вас состав проверки
+									+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+						li
+							button.button.double-button
+								.double-button__left
+									+icon-group('cart', 'Cart', 'В корзину')
+								.double-button__right
+									+price-block('120 456', '220 456')
+							pre.
+								button.button.double-button
+									.double-button__left
+										+icon-group('cart', 'Cart', 'В корзину')
+									.double-button__right
+										+price-block('120 456', '220 456')
+						li
+							.product-cart-btn
+								.product-cart-btn__left
+									.price-block
+										.price-block-new 120 456 &#8381;
+										.price-block-old 220 456 &#8381;
+									svg.svg-plus
+											use(xlink:href="../img/svg-sprite.svg#svgPlus")
+						
+								.product-cart-btn__right
+									svg.svg-cart
+										use(xlink:href="./img/svg-sprite.svg#svgCart")
+									.price-block
+										.price-block-new 120 456 &#8381;
+										.price-block-old 220 456 &#8381;
+							pre.
+								.product-cart-btn
+									.product-cart-btn__left
+										.price-block
+											.price-block-new 120 456 &#8381;
+											.price-block-old 220 456 &#8381;
+										svg.svg-plus
+												use(xlink:href="../img/svg-sprite.svg#svgPlus")
+							
+									.product-cart-btn__right
+										svg.svg-cart
+											use(xlink:href="./img/svg-sprite.svg#svgCart")
+										.price-block
+											.price-block-new 120 456 &#8381;
+											.price-block-old 220 456 &#8381;
+						
+						li
+							.product-cart-btn.h-88
+								.product-cart-btn__left
+									.price-block
+										.price-block-new 120 456 &#8381;
+										.price-block-old 220 456 &#8381;
+									svg.svg-plus
+											use(xlink:href="../img/svg-sprite.svg#svgPlus")
+						
+								.product-cart-btn__right
+									svg.svg-cart
+										use(xlink:href="./img/svg-sprite.svg#svgCart")
+									.price-block
+										.price-block-new 120 456 &#8381;
+										.price-block-old 220 456 &#8381;
+							pre.
+								.product-cart-btn.h-88
+									.product-cart-btn__left
+										.price-block
+											.price-block-new 120 456 &#8381;
+											.price-block-old 220 456 &#8381;
+										svg.svg-plus
+												use(xlink:href="../img/svg-sprite.svg#svgPlus")
+							
+									.product-cart-btn__right
+										svg.svg-cart
+											use(xlink:href="./img/svg-sprite.svg#svgCart")
+										.price-block
+											.price-block-new 120 456 &#8381;
+											.price-block-old 220 456 &#8381;
+						
+						
+						li
+							.product-cart-btn.button--disable
+								.product-cart-btn__left
+									.text-12 Выберите состав проверки
+									svg.svg-plus
+											use(xlink:href="../img/svg-sprite.svg#svgPlus")
+								.product-cart-btn__right
+									svg.svg-cart
+										use(xlink:href="../img/svg-sprite.svg#svgCart")
+									.text-12 Мой заказ
+							pre.
+								.product-cart-btn.button--disable
+									.product-cart-btn__left
+										.text-12 Выберите состав проверки
+										svg.svg-plus
+												use(xlink:href="../img/svg-sprite.svg#svgPlus")
+									.product-cart-btn__right
+										svg.svg-cart
+											use(xlink:href="../img/svg-sprite.svg#svgCart")
+										.text-12 Мой заказ
+						li
+							button.product-cart-btn
+								.product-cart-btn__left
+									.text-12 Выберите состав проверки
+									svg.svg-plus
+											use(xlink:href="../img/svg-sprite.svg#svgPlus")
+								.product-cart-btn__right
+									svg.svg-cart
+										use(xlink:href="../img/svg-sprite.svg#svgCart")
+									.text-12 Мой заказ
+							pre.
+								button.product-cart-btn
+									.product-cart-btn__left
+										.text-12 Выберите состав проверки
+										svg.svg-plus
+												use(xlink:href="../img/svg-sprite.svg#svgPlus")
+									.product-cart-btn__right
+										svg.svg-cart
+											use(xlink:href="../img/svg-sprite.svg#svgCart")
+										.text-12 Мой заказ
+						li
+							a(href="#").product-cart-btn.button--blue
+								.product-cart-btn__left
+									.text-12 Выберите состав проверки
+									svg.svg-plus
+											use(xlink:href="../img/svg-sprite.svg#svgPlus")
+								.product-cart-btn__right
+									svg.svg-cart
+										use(xlink:href="../img/svg-sprite.svg#svgCart")
+									.text-12 Мой заказ
+							pre.
+								a(href="#").product-cart-btn.button--blue
+									.product-cart-btn__left
+										.text-12 Выберите состав проверки
+										svg.svg-plus
+												use(xlink:href="../img/svg-sprite.svg#svgPlus")
+									.product-cart-btn__right
+										svg.svg-cart
+											use(xlink:href="../img/svg-sprite.svg#svgCart")
+										.text-12 Мой заказ
