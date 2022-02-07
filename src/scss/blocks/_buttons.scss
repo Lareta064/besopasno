@@ -77,7 +77,14 @@
 		}
 	}
 }
-
+.button--short{
+	width: fit-content;
+	text-transform: uppercase;
+	font-size: 14px;
+	.svg-decision{
+		fill:transparent;
+	}
+}
 .button-tr svg {
 	fill: #DEDEDE;
 	width: 18px;
@@ -237,8 +244,18 @@
 
 	}
 }
+.button-flex.button--disable,
+.button.button--disable {
+	background: #DEDEDE;
+	opacity: 0.5;
+	color: #fff;
+}
 .h-88{
 	height: 88px;
 	line-height: 88px;
 	.price-block .price-block-new{font-size: 16px; line-height: 1.5;}
+}
+.h-40{
+	height: 40px;
+	line-height: 40px;
 }

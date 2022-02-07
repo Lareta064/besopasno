@@ -24,6 +24,14 @@ html(lang="ru")
 				.container-dashboard__content
 					ul.ui-buttons
 						li
+							+button-flex('a', '#', 'button--reverse button--short h-40', 'Решение',  'decision', 'Decision')
+							pre.
+								+button-flex('a', '#', 'button--reverse button--short h-40', 'Решение',  'decision', 'Decision')
+						li
+							+button-flex('a', '#', 'button--reverse button--disable', 'В корзину',  'cart', 'Cart')
+							pre.
+								+button-flex('a', '#', 'button--reverse button--disable', 'В корзину',  'cart', 'Cart')
+						li
 							+button('a', '#', 'Список заказов', '')
 							p  Кнопка - тег ссылка
 							pre.

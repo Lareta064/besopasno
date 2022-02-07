@@ -22,6 +22,21 @@ html(lang="ru")
 				h2 Главное меню
 
 				.container-dashboard__content
+					ul
+						li
+							+menu-person-info('avatar', 'Дмитрий Лукьян', '+7 (123) 456-78-90')
+							pre.
+								+menu-person-info('avatar', 'Дмитрий Лукьян', '+7 (123) 456-78-90')
+						li
+							+menu-block([{svgClass: 'svg-cat', spritId: 'Cat', text: 'Каталог услуг'}, {svgClass: 'svg-hist', spritId: 'Hist', text: 'История заказов'}])
+							pre.
+								+menu-block([{svgClass: 'svg-cat', spritId: 'Cat', text: 'Каталог услуг'}, {svgClass: 'svg-hist', spritId: 'Hist', text: 'История заказов'}])
+						li
+							+menu-block([{svgClass: 'svg-faq', spritId: 'Faq', text: 'О сервисе'}, {svgClass: 'svg-persone', spritId: 'Persone', text: 'Партнёрам'}, {svgClass: 'svg-book', spritId: 'Book', text: 'Частые вопросы'}, {svgClass: 'svg-map', spritId: 'Map', text: 'Контакты'}], 'Информация')
+							pre.
+								+menu-block([{svgClass: 'svg-faq', spritId: 'Faq', text: 'О сервисе'}, {svgClass: 'svg-persone', spritId: 'Persone', text: 'Партнёрам'}, {svgClass: 'svg-book', spritId: 'Book', text: 'Частые вопросы'}, {svgClass: 'svg-map', spritId: 'Map', text: 'Контакты'}], 'Информация')
+
+					
 					.aside-menu.aside-menu--active.visible(data-modal="main-menu")
 						.aside-menu__close(data-close)
 							.btn-close
@@ -29,11 +44,7 @@ html(lang="ru")
 									use(xlink:href="../img/svg-sprite.svg#svgClose")
 						.aside-menu__content
 							//====== шапка меню  =====
-							.person-block
-								.person-block__top
-									img(src="../img/avatar.jpg", width="48" height="48" alt="alt")
-								.person-block__center.title-20 Дмитрий Лукьян
-								.person-block__bottom.body-2 +7 (123) 456-78-90
+							+menu-person-info('avatar', 'Дмитрий Лукьян', '+7 (123) 456-78-90')
 							
 							+menu-block([{svgClass: 'svg-cat', spritId: 'Cat', text: 'Каталог услуг'}, {svgClass: 'svg-hist', spritId: 'Hist', text: 'История заказов'}])
 

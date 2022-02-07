@@ -1,0 +1,25 @@
+mixin menu-person-info(avaSrc, nameText, bottomText)
+	.person-block
+		.person-block__top
+			img(src="../img/"+avaSrc +".jpg", width="48" height="48" alt="alt")
+		.person-block__center.title-20 !{nameText}
+		.person-block__bottom.body-2 !{bottomText}
+
+//- строка главного меню
+mixin menuItem(text, link, addClass, svgClass, svgId )
+	a(href=""+link class="icon-text "+addClass)
+		svg(class="svg-"+svgClass)
+			use(xlink:href="../img/svg-sprite.svg#svg"+ svgId)
+		span !{text}
+
+//- блок ссылок бокового главного меню
+mixin menu-block(arr, title)
+	.aside-menu-block
+		if title
+			.aside-menu-block__title.body-2 #{title}
+		each item in arr
+			a(href="#").icon-text
+				span.icon-text__img
+					svg(class=""+item.svgClass)
+						use(xlink:href="../img/svg-sprite.svg#svg"+ item.spritId)
+				span #{item.text}

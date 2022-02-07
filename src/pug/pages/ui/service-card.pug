@@ -13,8 +13,18 @@ html(lang="ru")
 		link(rel="stylesheet", href="../css/main.css")
 		title UI-KIT
 
-	body
+	body.body-dashboard
 
-		include ./ui-navigation.pug
+		include ../../ui/ui-navigation.pug
 
 		block content
+			.container-dashboard
+				h2 Карточка одной услуги
+				+servcard
+				pre.
+					+servcard
+				+servcard(class="service-card--disable")
+				pre.
+					+servcard(class="service-card--disable")
+
+				

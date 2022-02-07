@@ -1,0 +1,19 @@
+mixin list-types(listClass,  ...items)
+	div(class= listClass)
+		ul
+			each item in items
+				li= item
+
+mixin list-sublist(arr)
+	.marker-list.marker-list--grid
+		ul
+			each item in arr
+				li
+					p
+						span !{item.listItem}
+						span !{item.listPrice}
+					if item.sublist
+						ul
+							each el in item.sublist
+								li= el
+				

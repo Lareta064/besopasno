@@ -1,0 +1,59 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Виды списков
+
+				.container-dashboard__content
+					ul.ui-lists
+						
+						li
+							+list-sublist([
+								{listItem: 'Стандартная экспертиза', listPrice: '12 000 &#8381;', sublist:['ЕГРН с ЭЦП Росреестра', 'Оперативная справка', 'Претензии по объекту МО', 'Оперативная справка']}, 
+								{listItem: 'Проверка иностранной доверенности', listPrice: '12 000 &#8381;'}
+								])
+							pre.
+								+list-sublist([
+								{listItem: 'Стандартная экспертиза', listPrice: '12 000 &#8381;', sublist:['ЕГРН с ЭЦП Росреестра', 'Оперативная справка', 'Претензии по объекту МО', 'Оперативная справка']}, 
+								{listItem: 'Проверка иностранной доверенности', listPrice: '12 000 &#8381;'}
+								])
+						
+						li
+							+list-types('marker-list', 'Нужно проверить текущих и предведущих собственников', 'Нужно проверить текущих и предведущих собственников')
+							
+							pre.
+								+list-types('marker-list', 'Нужно проверить текущих и предведущих собственников', 'Нужно проверить текущих и предведущих собственников')
+						
+						
+						li
+							+list-types('marker-list marker-list--brown', 'Нужно проверить текущих и предведущих собственников', 'Нужно проверить текущих и предведущих собственников')
+							pre.
+								+list-types('marker-list', 'Нужно проверить текущих и предведущих собственников', 'Нужно проверить текущих и предведущих собственников')
+						
+						li
+							+list-types('marker-lock', 'Суды', 'Арбитраж',' Банкродство','Налоги','Дисквалификация','Организации','Терроризм','Суды')
+							
+							pre.
+								+list-types('marker-lock', 'Суды', 'Арбитраж',' Банкродство','Налоги','Дисквалификация','Организации','Терроризм','Суды')
+						li
+							+list-types('marker-lock marker-lock-results', 'Суды', 'Арбитраж',' Банкродство','Налоги','Дисквалификация','Организации','Терроризм','Суды')
+							
+							pre.
+								+list-types('marker-lock marker-lock-results', 'Суды', 'Арбитраж',' Банкродство','Налоги','Дисквалификация','Организации','Терроризм','Суды')

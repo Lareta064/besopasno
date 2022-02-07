@@ -79,5 +79,8 @@
 		grid-template-columns: repeat(2, 1fr);
 		row-gap: 48px;
 	}
-	
+	.ui-lists>li{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
