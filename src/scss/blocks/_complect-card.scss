@@ -56,6 +56,23 @@
 	}
 	&__footer{
 		padding-top: 32px;
+		&--desk{
+			display: flex;
+			@media(max-width:1023px){
+				display: none;
+			}
+		}
+		
+		&--mob{
+			justify-content: center;display: flex;
+			display: none;
+			@media(max-width:1023px){
+				display: flex;
+			}
+		}
+	}
+	&__add{
+		padding-top: 32px;
 	}
 
 }
