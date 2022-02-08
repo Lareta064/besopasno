@@ -1,0 +1,84 @@
+.address-card {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #fff;
+	border-radius: 2px;
+	max-width: 712px;
+
+	&__center {
+		flex-grow: 2;
+		padding-right: 16px;
+	}
+
+	&__left {
+		margin-right: 16px;
+		flex-shrink: 0
+	}
+
+	&__right {
+		margin-left: auto;
+		flex-shrink: 0;
+
+		.success-check {
+			display: none;
+		}
+
+		.chevron-right {
+			display: flex;
+		}
+	}
+
+	.text-12 {
+		color: #7c7c7c;
+	}
+
+	&:hover {
+		.svg-chevron {
+			fill: $darkBlue;
+		}
+
+		.text-12,
+		.title-16 {
+			color: $darkBlue;
+		}
+	}
+}
+.address-card.address-card--current {
+	.address-card__right {
+
+		.success-check {
+			display: flex;
+		}
+
+		.chevron-right {
+			display: none;
+		}
+	}
+}
+
+.address-card--mini {
+
+	.badge-group,
+	.address-card__left {
+		display: none;
+	}
+
+	.title-16 {
+		color: #7C7C7C;
+		width: 280px;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+	}
+
+	.text-12 {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.44px;
+		color: rgba(124, 124, 124, .54);
+	}
+}

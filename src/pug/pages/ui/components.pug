@@ -23,6 +23,23 @@ html(lang="ru")
 
 				.container-dashboard__content
 					ul.ui-components
+						
+						li
+							.badge 873 м
+							.badge.badge--color квартира
+							.badge.badge--white всего прав 5
+							pre.
+								.badge 873 м
+								.badge.badge--color квартира
+								.badge.badge--white всего прав 5
+						li
+							.badge-group
+								.badge 873 м
+								.badge.badge--color 873 м
+							pre.
+								.badge-group
+									.badge 873 м
+									.badge.badge--color 873 м
 						li
 							+icon-group('cart', 'Cart', 'В корзину')
 							pre.
@@ -57,3 +74,62 @@ html(lang="ru")
 										.button-group__top
 											.text-12 Объект проверки
 										+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
+						li
+							.form-order-card
+								.form-order-card__title
+									a(href="#")
+										svg.svg-back2
+											use(xlink:href="../img/svg-sprite.svg#svgBack2")
+									p Выберите состав проверки
+								
+								
+								.form-order-card__footer
+									.product-cart-btn.button--disable
+										.product-cart-btn__left
+											.text-12 Выберите состав проверки
+											svg.svg-plus
+													use(xlink:href="../img/svg-sprite.svg#svgPlus")
+										.product-cart-btn__right
+											svg.svg-cart
+												use(xlink:href="../img/svg-sprite.svg#svgCart")
+											.text-12 Мой заказ
+									
+							pre.
+								.form-order-card
+									.form-order-card__title
+										a(href="#")
+											svg.svg-back2
+												use(xlink:href="../img/svg-sprite.svg#svgBack2")
+										p Выберите состав проверки
+									
+									
+									.form-order-card__footer
+										.product-cart-btn.button--disable
+											.product-cart-btn__left
+												.text-12 Выберите состав проверки
+												svg.svg-plus
+														use(xlink:href="../img/svg-sprite.svg#svgPlus")
+											.product-cart-btn__right
+												svg.svg-cart
+													use(xlink:href="../img/svg-sprite.svg#svgCart")
+												.text-12 Мой заказ
+						li
+							.form-order-card
+								.form-order-card__title
+									
+									p Выберите комплект документов
+								.form-order-card__body
+									p Выберите документы чтобы сделать заказ
+								
+								.form-order-card__footer
+									+button-flex('a', '#', 'button--disable', 'В корзину',  'cart', 'Cart')
+							pre.
+								.form-order-card
+									.form-order-card__title
+										
+										p Выберите комплект документов
+									.form-order-card__body
+										p Выберите документы чтобы сделать заказ
+									
+									.form-order-card__footer
+										+button-flex('a', '#', 'button--disable', 'В корзину',  'cart', 'Cart')

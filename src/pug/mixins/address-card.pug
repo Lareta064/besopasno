@@ -1,0 +1,43 @@
+mixin address-card(link="#!")
+	a(href=""+ link data-address).address-card&attributes(attributes)
+		.address-card__left
+			.address-icon
+				svg.svg-house
+					use(xlink:href="../img/svg-sprite.svg#svgHouse")
+		.address-card__center
+			.title-16 ул Юности д 8, офис 902
+			.text-12 № 23982-98479-38274-9
+			.badge-group
+				.badge.badge--color Квартира
+				.badge 873 м
+				.badge 9 этаж
+				
+
+		.address-card__right
+			.chevron-right
+				svg.svg-chevron
+					use(xlink:href="../img/svg-sprite.svg#svgChevron")
+			
+			.success-check
+				svg.svg-success
+					use(xlink:href="../img/svg-sprite.svg#svgSuccess")
+
+//==== карточка с адресом - результат поиска =======
+mixin address-card-mini(text1, text2, link="#!")
+	a(href= link).address-card.address-card--mini&attributes(attributes)
+		.address-card__left
+			.address-icon
+				svg.svg-house
+					use(xlink:href="../img/svg-sprite.svg#svgHouse")
+		.address-card__center
+			.title-16 #{text1}
+			.text-12  #{text2}
+			.badge-group
+				.badge.badge--color Квартира
+				.badge 873 м
+				.badge 9 этаж
+
+		.address-card__right
+			.chevron-right
+				svg.svg-chevron
+					use(xlink:href="../img/svg-sprite.svg#svgChevron")
