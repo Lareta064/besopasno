@@ -1,0 +1,21 @@
+.modal-frame{
+	width: 100%;
+	max-width: 520px;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
+	height: 800px;
+}
+.modal-close{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	z-index: 5;
+	cursor:pointer;
+	top: 16px;
+	right: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
