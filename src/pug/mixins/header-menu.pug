@@ -1,0 +1,36 @@
+mixin header(title, inner,link, search)
+	header.header&attributes(attributes)
+		.header-content
+			.header-left
+				if inner == 'inner'
+				//======= menu icon =======
+				.header-menu(data-btn="main-menu")
+					.header-menu__icon
+						span
+					.header-menu__title меню
+				
+				//======= menu icon =======
+				a(href=""+link).prev-page
+					svg.svg-back
+						use(xlink:href="../img/svg-sprite.svg#svgBack")
+			
+			
+			//======= logo =======
+			.header-logo
+				a(href="#!").logo
+					img(src="../img/logo.png", width="24" alt="logo")
+					|Безопасно#[span Сделка]
+				.header-title
+					.title-20 #{title}
+			
+			//======= cart =======
+			.header-right
+				if search	
+					.search-toggle
+						svg.svg-search
+							use(xlink:href="../img/svg-sprite.svg#svgSearch")
+				.cart-button
+					span мой заказ
+					span.cart-button__icon
+						svg.svg-cart
+							use(xlink:href="../img/svg-sprite.svg#svgCart")

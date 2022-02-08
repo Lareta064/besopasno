@@ -8,9 +8,8 @@
 //blocks
  @import "blocks/_components.scss";
  @import "blocks/buttons";
- @import "blocks/header";
  @import "blocks/breadcrumbs";
- @import "blocks/aside-menu";
+ 
  @import "blocks/list-types";
  @import "blocks/social-block";
  @import "blocks/service-card";
@@ -18,9 +17,12 @@
  @import "blocks/complect-card";
  @import "blocks/address-card";
  @import "blocks/verification-card";
-
  @import "blocks/modal-frame";
  
+//sections
 
+ @import "sections/aside-menu";
+ @import "sections/header-menu";
+ @import "sections/footer";
  //ui
  @import "ui/_ui-navigation";

@@ -1,0 +1,35 @@
+//===== FOOTER ======
+footer.footer
+	.container
+		.footer-content
+			//======кнопки-меню =====
+			nav.footer-menu
+				.footer-menu-item
+					+menuItem('Каталог услуг', '#', 'button-tr','cat', 'Cat')
+				.footer-menu-item
+					+menuItem('История заказов', '#', 'button-tr','hist', 'Hist')
+				.footer-menu-item
+					+menuItem('Частые вопросы', '#', 'button-tr','book', 'Book')
+				.footer-menu-item
+					+menuItem('О сервисе', '#', 'button-tr','faq', 'Faq')
+				.footer-menu-item
+					+menuItem('Партнерам', '#', 'button-tr','persone', 'Persone')
+			//===contacts ======
+			.footer-contacts
+				//====== button=====
+				.footer-contacts-btn
+					a(href="#").button-tr.text-upper Напишите нам
+				
+				//====== social-block wrapper =====
+				.footer-contacts-social
+					+social-block(
+						{link: "#", socClass:"icon-tg"},
+						{link: "#", socClass:"icon-wa"},
+						{link: "#", socClass:"icon-mess"},
+						{link: "#", socClass:"icon-vk"},
+						{link: "#", socClass:"icon-fb"}
+						)
+
+		//=====footer bottom ======
+		.footer-copyright.text-12
+			p Дизайн сервиса разработан командой Дмитрия Лукьяна
