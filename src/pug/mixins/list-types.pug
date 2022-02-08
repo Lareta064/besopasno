@@ -17,3 +17,11 @@ mixin list-sublist(arr)
 							each el in item.sublist
 								li= el
 				
+//=====данные из реестра ====
+mixin reestr-list(...items)
+	.reestr-list
+		each item in items
+			.reestr-list-item
+				.text-16 #{item.text1}
+				span
+				.text-12 #{item.text2}
