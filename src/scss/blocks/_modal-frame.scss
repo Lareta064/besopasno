@@ -8,6 +8,8 @@
 	height: 800px;
 	&__img{
 		padding-top: 40px;
+		display: flex;
+		justify-content: center;
 		.success-check{
 			width: 128px;
 			height: 128px;
@@ -33,6 +35,10 @@
 	}
 	&__footer{
 		padding-top: 44px;
+		.text-16{
+			text-align: center;
+			padding-top: 32px;
+		}
 	}
 	.button + .button{
 		margin-top: 16px;
