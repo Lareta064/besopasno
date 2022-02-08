@@ -66,3 +66,14 @@
 		color: #B5B5B5;
 	}
 }
+.add-information{
+	background: $f3;
+	padding: 16px;
+	.button-group-1,.button-tr {
+		max-width: 100%;
+		width: 100%;
+	}
+	.button-group-1+.button-group-1{
+		padding-top: 16px;
+	}
+}

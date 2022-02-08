@@ -9,15 +9,17 @@ mixin button(tagName, link, text, colorClass)
 mixin button-flex(tagName, link, addClass, text, svgClass, svgId)
 	if tagName == 'a'
 		a(href=""+link class="button-flex "+ addClass)&attributes(attributes)
-			span #{text}
 			svg(class="svg-"+svgClass)
 				use(xlink:href="../img/svg-sprite.svg#svg"+ svgId)
+			span #{text}
+			
 			
 	if tagName == 'button'
 		button(class="button-flex "+ addClass)&attributes(attributes)
-			span #{text}
 			svg(class="svg-"+svgClass)
 				use(xlink:href="../img/svg-sprite.svg#svg"+ svgId)
+			span #{text}
+			
 
 //- кнопка с разделением по центру
 mixin double-button(text1, text2)

@@ -24,13 +24,13 @@ html(lang="ru")
 				.container-dashboard__content
 					ul.ui-buttons
 						li
-							+button-flex('a', '#', 'button--reverse button--short h-40', 'Решение',  'decision', 'Decision')
+							+button-flex('a', '#', 'button--short h-40', 'Решение',  'decision', 'Decision')
 							pre.
-								+button-flex('a', '#', 'button--reverse button--short h-40', 'Решение',  'decision', 'Decision')
+								+button-flex('a', '#', 'button--short h-40', 'Решение',  'decision', 'Decision')
 						li
-							+button-flex('a', '#', 'button--reverse button--disable', 'В корзину',  'cart', 'Cart')
+							+button-flex('a', '#', 'button--disable', 'В корзину',  'cart', 'Cart')
 							pre.
-								+button-flex('a', '#', 'button--reverse button--disable', 'В корзину',  'cart', 'Cart')
+								+button-flex('a', '#', 'button--disable', 'В корзину',  'cart', 'Cart')
 						li
 							+button('a', '#', 'Список заказов', '')
 							p  Кнопка - тег ссылка
@@ -43,9 +43,9 @@ html(lang="ru")
 							pre.
 								+button('button', '', 'Список заказов', 'button--blue')
 						li
-							+button-flex('a', '#', 'button--reverse button--left', 'Каталог услуг',  'cat', 'Cat')
+							+button-flex('a', '#', 'button--left', 'Каталог услуг',  'cat', 'Cat')
 							pre.
-								+button-flex('a', '#', 'button--reverse button--left', 'Каталог услуг',  'cat', 'Cat')
+								+button-flex('a', '#', 'button--left', 'Каталог услуг',  'cat', 'Cat')
 							p параметры миксина: 
 								ul
 									li 1. тег (ссылка или кнопка)
@@ -61,14 +61,14 @@ html(lang="ru")
 							
 							
 						li
-							+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+							+button-flex('button', '', 'button--reverse button--blue', 'Каталог услуг',  'chevron', 'Chevron')
 							pre.
-								+button-flex('button', '', 'button--blue', 'Каталог услуг',  'chevron', 'Chevron')
+								+button-flex('button', '', 'button--reverse button--blue', 'Каталог услуг',  'chevron', 'Chevron')
 						li
 						li
-							+button-flex('button', '', 'button--light', 'Получить рекомендации',  'chevron', 'Chevron')
+							+button-flex('button', '', 'button--reverse button--light', 'Получить рекомендации',  'chevron', 'Chevron')
 							pre.
-								+button-flex('button', '', 'button--light', 'Получить рекомендации',  'chevron', 'Chevron')
+								+button-flex('button', '', 'button--reverse button--light', 'Получить рекомендации',  'chevron', 'Chevron')
 						li
 							+double-button('Оплатить', '99 &#8381;')
 							pre.
@@ -130,6 +130,32 @@ html(lang="ru")
 										+icon-group('cart', 'Cart', 'В корзину')
 									.double-button__right
 										+price-block('120 456', '220 456')
+						
+						li(style="background: #333; padding:40px;")
+							+menuItem('История заказов', '#', 'button-tr','hist', 'Hist')
+						pre.
+							+menuItem('История заказов', '#', 'button-tr','hist', 'Hist')
+						
+						li(style="background: #333; padding:40px;")
+							a(href="#!").button-tr.text-upper напишите нам
+								
+						pre.
+							a(href="#!").button-tr.text-upper напишите нам
+						
+						li(style="padding:40px;")
+							+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
+							pre.
+								+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
+						li
+							.button-group-1
+								.button-group__top
+									.text-12 Объект проверки
+								+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
+							pre.
+								.button-group-1
+									.button-group__top
+										.text-12 Объект проверки
+									+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
 						li
 							.product-cart-btn
 								.product-cart-btn__left

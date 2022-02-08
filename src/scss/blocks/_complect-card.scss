@@ -1,0 +1,61 @@
+.complect-card{
+	padding: 32px;
+	background-color: #fff;
+	padding-top: 16px;
+	padding-right: 16px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+	0px 4px 8px rgba(0, 0, 0, 0.02),
+	0px 1px 12px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	&__title{
+		padding-bottom: 4px;
+	}
+	&__body{
+		max-height: 216px;
+		overflow: hidden;
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: #5182A4 #DEDEDE;
+
+		&::-webkit-scrollbar {
+			width: 5px;
+			height: 20px;
+			border-radius: 5px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #5182A4;
+			border-radius: 5px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: #DEDEDE;
+			border-radius: 5px;
+		}
+		.marker-list{
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+		.marker-list li>ul{
+			width: calc(100% - 64px);
+		}
+		.marker-list>ul>li{
+			padding-top: 16px;
+			padding-bottom: 16px;
+			&:after{
+				top: 22px;
+			}
+		}
+		.marker-list>ul>li +li {
+			border-top: 1px solid #DEDEDE;
+			&:last-child{
+				border-bottom:1px solid #DEDEDE;
+				
+			}
+		}
+	}
+	&__footer{
+		padding-top: 32px;
+	}
+
+}

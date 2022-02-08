@@ -1,0 +1,39 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Карточка КОМПЛЕКТ №3
+
+				.container-dashboard__content
+					.complect-card
+						.complect-card__title.title-20 Комплект проверки №3
+						.complect-card__body
+							+list-sublist([
+							{listItem: 'Стандартная экспертиза', listPrice: '12 000 ₽', sublist:['ЕГРН с ЭЦП Росреестра', 'Оперативная справка', 'Претензии по объекту МО', 'Оперативная справка']}, 
+							{listItem: 'Проверка иностранной доверенности', listPrice: '12 000 ₽'},
+							{listItem: 'Проверка иностранной доверенности', listPrice: '12 000 ₽'}
+							])
+						.complect-card__footer
+							.button.double-button
+								.double-button__left
+									+icon-group('cart', 'Cart', 'В корзину')
+								.double-button__right
+									+price-block('120 456', '220 456')
+												

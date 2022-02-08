@@ -92,13 +92,18 @@
 .text-medium{
 	font-family: $rm;
 }
-.text-blue {
+.text-blue,
+.text-blue>* {
 	color: $lightBlue;
 }
-
+.text-darkblue,
+.text-darkblue>* {
+	color: $darkBlue;
+}
 .text-grey {
 	color: $grey;
 }
-.text-dark{
+.text-dark,
+.text-dark >*{
 	color: $dark;
 }

@@ -77,6 +77,17 @@
 		}
 	}
 }
+.button-tr.button-tr--info {
+	border-color: $lightGrey;
+	svg{
+		stroke:$lightGrey;
+	}
+	&>* {
+		color: $darkBlue;
+		text-transform: uppercase;
+
+	}
+}
 .button--short{
 	width: fit-content;
 	text-transform: uppercase;
