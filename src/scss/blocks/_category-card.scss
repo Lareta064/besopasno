@@ -26,7 +26,7 @@
 		margin-right: 1rem;
 		transition: .5s;
 
-		.svg-check {
+		.icon-check {
 			opacity: 0;
 			transition: .5s;
 		}
@@ -56,6 +56,7 @@
 
 		&__icon {
 			margin-right: 9px;
+			
 		}
 	}
 }
@@ -67,7 +68,7 @@
 	.category-card__icon {
 		background-color: $green;
 
-		.svg-check {
+		.icon-check {
 			opacity: 1;
 		}
 	}

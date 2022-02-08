@@ -1,0 +1,54 @@
+.doc-slider {
+	width: 400px;
+
+	.swiper-slide__item {
+		width: 100%;
+
+		img {
+			filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+		}
+	}
+}
+
+.swiper-pagination {
+	width: fit-content !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+	bottom: 4px;
+
+	.swiper-pagination-bullet {
+		background: #1E4159;
+		opacity: 0.24;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #864023;
+		opacity: 1;
+	}
+}
+
+.slider-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-prev,
+.btn-next {
+	width: 24px;
+	height: 24px;
+	transition: .5s;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.4 1.4L6 0L0 6L6 12L7.4 10.6L2.8 6L7.4 1.4Z' fill='%23B5B5B5'/%3e%3c/svg%3e");
+	background-size: initial;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+	&:hover {
+		opacity: .5;
+	}
+}
+
+.btn-next {
+	transform: rotate(180deg);
+}
