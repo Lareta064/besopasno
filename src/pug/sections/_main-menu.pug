@@ -1,0 +1,14 @@
+.aside-menu.aside-menu--active.visible(data-modal="main-menu")
+	.aside-menu__close(data-close)
+		.btn-close
+			svg.svg-close
+				use(xlink:href="../img/svg-sprite.svg#svgClose")
+	.aside-menu__content
+		//====== шапка меню  =====
+		+menu-person-info('avatar', 'Дмитрий Лукьян', '+7 (123) 456-78-90')
+		
+		+menu-block([{svgClass: 'svg-cat', spritId: 'Cat', text: 'Каталог услуг'}, {svgClass: 'svg-hist', spritId: 'Hist', text: 'История заказов'}])
+
+		+menu-block([{svgClass: 'svg-faq', spritId: 'Faq', text: 'О сервисе'}, {svgClass: 'svg-persone', spritId: 'Persone', text: 'Партнёрам'}, {svgClass: 'svg-book', spritId: 'Book', text: 'Частые вопросы'}, {svgClass: 'svg-map', spritId: 'Map', text: 'Контакты'}], 'Информация')
+
+		+menu-block([{svgClass: 'svg-bell', spritId: 'Bell', text: 'Уведомления'}, {svgClass: 'svg-lock', spritId: 'Lock', text: 'Изменить пароль'}, {svgClass: 'svg-out', spritId: 'Out', text: 'Выход'}], 'Аккаунт и безопасность')

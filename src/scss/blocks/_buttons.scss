@@ -25,10 +25,9 @@
 .button--blue{
 	background-color: $lightBlue;
 }
-.button--light {
-	font-size: 16px;
-	letter-spacing: -0.2px;
-	font-family: $rr;
+.button--white {
+	background: $f3;
+	color: $main;
 }
 .button-flex{
 	display: flex;

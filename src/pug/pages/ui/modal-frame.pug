@@ -23,11 +23,21 @@ html(lang="ru")
 
 				.container-dashboard__content
 					.modal-frame
-						.modal-close.btn-close
-							svg.svg-close
-								use(xlink:href="../img/svg-sprite.svg#svgClose")
+						.container-slim
+							.modal-close.btn-close
+								svg.svg-close
+									use(xlink:href="../img/svg-sprite.svg#svgClose")
+							
+							.modal-frame-content
+								.modal-frame__img
+									.success-check
+										svg.svg-success
+											use(xlink:href="../img/svg-sprite.svg#svgSuccess")
+								.modal-frame__text
+									.title-24 Сообщение успешно отправлено
+									.text-16 В ближайшее время с вами свяжутся наши сециалисты
+
+							.modal-frame__footer
+								+button('button', '', 'Каталог услуг', 'button--blue')
+								+button('button', '', 'Закрыть', 'button--white')
 						
-						.modal-frame__header
-						.modal-frame__body
-						.modal-frame__footer
-					
