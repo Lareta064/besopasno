@@ -22,6 +22,7 @@ html(lang="ru")
 				h2 Карточка адреса
 
 				.container-dashboard__content
+					h2  1. Карточка - основная
 					+address-card('#!')
 					pre.
 						+address-card('test.html')
@@ -30,7 +31,7 @@ html(lang="ru")
 					+address-card('test.html')(class="address-card--current")
 					br
 					br
-					h4 Карточка - результат поиска
+					h2  2. Карточка мини- результат поиска
 					+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
 					pre.
 						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')

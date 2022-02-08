@@ -1,0 +1,37 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Карточка Объект проверки
+				.verification-card
+					.verification-card__block
+						.verification-card__block-title
+							.text-12 Объект проверки
+							.icon-edit
+						.verification-card__block-body
+							+icon-group('house', 'House', 'Улица Юности дом 8')
+					.verification-card__block
+						.verification-card__block-title
+							.text-12 Владельцы
+							.icon-edit
+						.verification-card__block-body
+							+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+							+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+							+icon-group('seller', 'Seller', 'Иванов Иван Иванович')

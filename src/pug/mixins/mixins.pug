@@ -11,30 +11,3 @@ mixin icon-group(svgClass, svgId, text)
 		svg(class="svg-"+svgClass)
 			use(xlink:href="../img/svg-sprite.svg#svg"+ svgId)
 		span !{text}
-
-mixin category-card(title, pr1, pr2)
-	.category-card&attributes(attributes)
-		.category-card__icon
-			span.icon-check
-		.category-card__info
-			.category-card__title  #{title}
-			.category-card__price
-				.price-block
-					.price-block-new #{pr1} &#8381;
-					.price-block-old #{pr1} &#8381;
-
-mixin servcard
-	.service-card(data-serv-modal)&attributes(attributes)
-		.service-card__left
-			span.icon-doc
-		.service-card__center
-			.service-card__title
-				p Проверка инностранной доверенности
-			.service-card__price
-				.body-2 5 000₽ 
-				.text-9 5 000₽
-
-		.service-card__right
-			.info-icon
-				svg.svg-info
-					use(xlink:href="../img/svg-sprite.svg#svgInfo")

@@ -1,0 +1,10 @@
+mixin category-card(title, pr1, pr2)
+	.category-card&attributes(attributes)
+		.category-card__icon
+			span.icon-check
+		.category-card__info
+			.category-card__title  #{title}
+			.category-card__price
+				.price-block
+					.price-block-new #{pr1} &#8381;
+					.price-block-old #{pr1} &#8381;
