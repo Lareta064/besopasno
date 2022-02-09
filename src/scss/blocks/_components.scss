@@ -183,3 +183,27 @@
 		width: 230px;
 	}
 }
+.expert-review{
+	max-width: 296px;
+	padding: 16px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+	0px 4px 8px rgba(0, 0, 0, 0.02),
+	0px 1px 12px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	&__body{
+		display: flex;
+		padding-bottom: 16px;
+		.title-14{
+			color: $darkBlue;
+			padding-bottom: 4px;
+		}
+	}
+	&__img {
+		flex-shrink:0;
+	}
+	&__text{padding-left: 16px;}
+	&__btn{
+		.button{white-space: nowrap;}
+	}
+}

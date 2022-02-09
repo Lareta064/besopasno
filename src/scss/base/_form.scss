@@ -1,7 +1,7 @@
 /*form elements*/
 .form-item{
 	position: relative;
-	input{
+	input,textarea{
 		display: block;
 		width: 100%;
 		border: 1px solid #F3F3F3;
@@ -16,7 +16,14 @@
 		letter-spacing: 0.44px;
 		&::placeholder{
 			color: #B5B5B5;
+			font-family: $rr;
+			font-size: 16px;
 		}
+	}
+	textarea{
+		height: 152px;
+		padding-top: 16px;
+		resize:none;
 	}
 }
 .search-field{
@@ -96,3 +103,6 @@
 	margin-bottom: 32px;
 }
 
+.modal-frame form{
+	padding-top: 16px;
+}

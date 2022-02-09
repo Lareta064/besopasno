@@ -1,17 +1,16 @@
 .modal-frame
-	.container-slim
-		.modal-close.btn-close
-			svg.svg-close
-				use(xlink:href="../img/svg-sprite.svg#svgClose")
+	.modal-close.btn-close
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
 		
-		.modal-frame-content
+	.modal-frame-content
+		.container-slim
 			.modal-frame__img
 				img(src="../../img/logo.png", width="85" alt="logo")
 			.modal-frame__text
 				.title-24 Для кого хотите сделать проверку?
-				
-
-		.modal-frame__footer
+	.modal-frame__footer
+		.container-slim
 			+button('button', '', 'Мне для себя', 'button--blue')
 			+button('button', '', 'Я агент!', 'button--white')
-			.text-16 Для представителоей агентств недвижимости действуют специальные условия
+			.text-16 Для представителоей агентств недвижимости действуют специальные условия                

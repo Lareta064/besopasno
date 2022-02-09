@@ -1,0 +1,47 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Экспертная проверка
+
+				.container-dashboard__content
+					.expert-review
+						.expert-review__body
+							.expert-review__img
+								.success-group
+									.icon-doc
+									.check-success
+							.expert-review__text
+								.title-14 Экспертная проверка
+								.text-12 Будет произведен анализ открытых и закрытых данных и вынесено заключение
+						.expert-review__btn
+							+double-button('Заказать проверку', '2 999 &#8381;')(class="fz-16")
+					pre.
+						.expert-review
+							.expert-review__body
+								.expert-review__img
+									.success-group
+										.icon-doc
+										.check-success
+								.expert-review__text
+									.title-14 Экспертная проверка
+									.text-12 Будет произведен анализ открытых и закрытых данных и вынесено заключение
+							.expert-review__btn
+								+double-button('Заказать проверку', '2 999 &#8381;')(class="fz-16")
