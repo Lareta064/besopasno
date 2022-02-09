@@ -96,6 +96,8 @@
 .button--short{
 	width: fit-content;
 	text-transform: uppercase;
+	text-align: center;
+	min-width: 64px;
 	font-size: 14px;
 	.svg-decision{
 		fill:transparent;

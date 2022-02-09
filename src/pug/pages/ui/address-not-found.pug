@@ -1,0 +1,87 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Адрес не найден
+
+				.container-dashboard__content
+					//======сообщение для десктопа ===========
+					.modal-frame.modal-frame--short.modal-frame--notfound
+						.modal-frame-content
+							.container-slim
+								.modal-frame__img
+									.icon-not
+										svg.svg-stop
+											use(xlink:href="../img/svg-sprite.svg#svgStop")
+								.modal-frame__text
+									.title-20 Адрес не найден
+									.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
+						.modal-frame__footer
+							.container-slim
+								.container-slim
+									+button('button', '', 'Перейти в каталог услуг', 'button--blue')
+					pre.
+						.modal-frame.modal-frame--short.modal-frame--notfound
+							.modal-frame-content
+								.container-slim
+									.modal-frame__img
+										.icon-not
+											svg.svg-stop
+												use(xlink:href="../img/svg-sprite.svg#svgStop")
+									.modal-frame__text
+										.title-20 Адрес не найден
+										.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
+							.modal-frame__footer
+								.container-slim
+									.container-slim
+										+button('button', '', 'Перейти в каталог услуг', 'button--blue')
+
+								
+
+					//======сообщение для мобилок ===========
+					.modal-frame.modal-frame--small.modal-frame--notfound
+						.modal-close.btn-close
+							svg.svg-close(data-close)
+								use(xlink:href="../img/svg-sprite.svg#svgClose")
+						.modal-frame-content
+							.modal-frame__text
+								.title-20
+									.icon-not-small
+										svg.svg-stop
+											use(xlink:href="../img/svg-sprite.svg#svgStop")
+									|Адрес не найден
+								.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
+							.modal-frame__footer
+								+button('a', '#', 'ok', 'button--blue button--short h-40' )
+					pre.
+						.modal-frame.modal-frame--small.modal-frame--notfound
+							.modal-close.btn-close
+								svg.svg-close(data-close)
+									use(xlink:href="../img/svg-sprite.svg#svgClose")
+							.modal-frame-content
+								.modal-frame__text
+									.title-20
+										.icon-not-small
+											svg.svg-stop
+												use(xlink:href="../img/svg-sprite.svg#svgStop")
+										|Адрес не найден
+									.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
+								.modal-frame__footer
+									+button('a', '#', 'ok', 'button--blue button--short h-40' )
