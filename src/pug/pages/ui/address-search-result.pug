@@ -19,12 +19,27 @@ html(lang="ru")
 
 		block content
 			.container-dashboard
-				h2 Табы категории
+				h2 Адреса - результат поиска
 
 				.container-dashboard__content
-					include ../../sections/_categories-tabs
-
-		//=============== мои скрипты ===================
-		script(src="../libs/jquery/jquery-3.0.0.min.js")
-		script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
-		script(src="../js/main.js")
+					.col-712.wrapper-drop
+						.wrapper-drop__header
+							.title-16 Найденные варианты
+								span.icon-caret
+									i
+						.wrapper-drop__body
+							+address-card
+							+address-card
+							+address-card
+							+address-card
+					pre.
+						.col-712.wrapper-drop
+							.wrapper-drop__header
+								.title-16 Найденные варианты
+									span.icon-caret
+										i
+							.wrapper-drop__body
+								+address-card
+								+address-card
+								+address-card
+								+address-card

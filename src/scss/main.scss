@@ -20,6 +20,8 @@
  @import "blocks/verification-card";
  @import "blocks/address-not-found";
  @import "blocks/modal-frame";
+ @import "blocks/reestr-data";
+ @import "blocks/large-modal";
  
 //sections
 
@@ -27,6 +29,11 @@
  @import "sections/header-menu";
  @import "sections/express-header";
  @import "sections/category-tabs";
+ @import "sections/address-search-result";
  @import "sections/footer";
+
+// pages
+ @import "pages/p-117";
+ 
  //ui
  @import "ui/_ui-navigation";

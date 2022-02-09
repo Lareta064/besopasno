@@ -138,3 +138,14 @@
 		}
 	}
 }
+/* TABS*/
+.tabs-wrapper {
+	.tabs {
+		display: flex;
+	}
+
+	.tab {
+		cursor: pointer;
+	}
+
+}

@@ -1,0 +1,32 @@
+.categories {
+
+	/*main-content*/
+	&-body {
+		.container {
+			@media(max-width:767px) {
+				padding-left: 0;
+				padding-right: 0;
+
+				.tabs-header {
+					padding-left: 1rem;
+					padding-right: 1rem;
+				}
+			}
+		}
+	}
+
+	&-body__content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 1rem;
+
+		@media(max-width:1279px) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@media(max-width:1023px) {
+			display: block;
+		}
+	}
+}

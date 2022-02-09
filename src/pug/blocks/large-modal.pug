@@ -1,0 +1,46 @@
+//========== модалка по клику на иконку инфо на стр категорий =====================
+.modal-large.service-modal(data-modal-frame)#service-modal
+	//===== close btn ============
+	.btn-close(close-modal)
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+	
+	//===== content ============
+	.servise-deskrip
+		//===== left part ============
+		.servise-deskrip__left
+			.modal-large-container
+				.servise-deskrip__body
+					p  Проверка иностранной доверенности
+				
+					p Юридическая проверка документов/материалов по сделке.
+					p #[strong Вы можете направить нам имеющиеся данные:]
+				
+					ul
+
+						li правоустанавливающие документы (ДКП, Свидетельство, ДДУ и т.п.),
+						li паспорт собственника,
+						li выписка из домовой
+
+					p Или дополнительно заказать необходимые проверки:
+					
+					ul
+
+						li Оперативная справка на продавца
+						li ЕГРП архив
+						li Архив домовой книги
+
+				
+					p  #[em Вашему клиенту будет подготовлено официальное правовое заключение, составленное по результатам профессиональной оценки материалов.]
+				
+				.servise-deskrip__footer
+					button.button.double-button
+						.double-button__left
+							+icon-group('cart', 'Cart', 'В корзину')
+						.double-button__right
+							+price-block('120 456', '220 456')
+		
+		//=====right part ============
+		.servise-deskrip__right
+			.modal-large-container
+				include ../blocks/documents-slider

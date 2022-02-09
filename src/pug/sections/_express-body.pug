@@ -1,0 +1,35 @@
+
+.categories
+	.categories-body.p-40
+		.container
+			.categories-body__content
+				include _categories-tabs.pug
+
+				//=====правый сайдбар======
+				.categories-aside
+					.complect-card
+						.complect-card__title.title-20 Комплект проверки №3
+						.complect-card__body
+							+list-sublist([
+							{listItem: 'Стандартная экспертиза', listPrice: '12 000 ₽', sublist:['ЕГРН с ЭЦП Росреестра', 'Оперативная справка', 'Претензии по объекту МО', 'Оперативная справка']}, 
+							{listItem: 'Проверка иностранной доверенности', listPrice: '12 000 ₽'},
+							{listItem: 'Проверка иностранной доверенности', listPrice: '12 000 ₽'}
+							])
+						.complect-card__footer
+							.complect-card__footer--desk
+								.button.double-button
+									.double-button__left
+										+icon-group('cart', 'Cart', 'В корзину')
+									.double-button__right
+										+price-block('120 456', '220 456')
+							
+							.complect-card__footer--mob
+								button.product-cart-btn
+									.product-cart-btn__left
+										svg.svg-cart
+											use(xlink:href="../img/svg-sprite.svg#svgCart")
+										.title-20 В корзину
+									.product-cart-btn__right
+										.price-block
+											.price-block-new 120 456 &#8381;
+											.price-block-old 220 456 &#8381;

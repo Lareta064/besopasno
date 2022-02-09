@@ -1,8 +1,16 @@
 extends ../layouts/layout.pug
 
 block content
+	//========top-menu=========
 	+header('Проверка объекта')
+	//======= page-header ==========
 	include ../sections/_express-header
+	//========= page-content =========
+	include ../sections/_express-body
+	//========= large-modal =========
+	include ../blocks/large-modal
+	//========== footer ==========
+	include ../sections/_footer
 	
 block variables
-	-var title = "Page";
+	-var title = "Expresss | главная";

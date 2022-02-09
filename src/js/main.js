@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (){
 	/* 1. есть блоки с атрибутом data-modal  , они появляются по клику на блоки с атрибутом data-btn, появляются за счет добавления класса visible , закрываются по клику на элемент с атрибутом data-close.  При открыти  таких модалок, фиксируется body  и показывается overlay полупрозрачный . - Скрипт #1
-	2. есть второй тип блоков с (data-modal-frame) одно такое окно может открываться по клику на разные кнопки. например открытие одного большого модального окна по клику на карточки сервиса.  Закрывается такое модальное окно по клику на кнопку с (close-modal)  - Скрипт #2 -*/	
+	*/
 	const overlayBg = document.querySelector('#overlay');
 	const bodyEl = document.body;
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
 	for(let item of formOpenButton){
 		item.addEventListener('click', function(e){
-			console.log('555');
+			
 			e.preventDefault.default;
 			let thisDataValue = item.dataset.btn;
 			
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function (){
 		});
 	}
 
-	// ===== - Скрипт #2 -  Показать модальное окно регистрации  ======
+	// ===== - Скрипт #2 -  Показать большое модальное окно стр категорий  ======
 	const servCards = document.querySelectorAll('[data-serv-modal]');
 	if(servCards.length > 0){
 
@@ -63,13 +63,14 @@ document.addEventListener("DOMContentLoaded", function (){
 		for(let item of servCards){
 			item.addEventListener('click', ()=>{
 				servDeskription.classList.add('visible');
+				bodyEl.classList.add('noscroll');
 			});
 		}
 		for(let item of bigModalClose){
 			item.addEventListener('click', (e)=>{
 				e.preventDefault();
 				item.closest('[data-modal-frame]').classList.remove('visible');
-				
+				bodyEl.classList.remove('noscroll');
 			});
 		}
 	}

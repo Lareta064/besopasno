@@ -1,0 +1,99 @@
+//========карточки категорий табы ==========
+.categories-tabs
+	.tabs-wrapper
+		.tabs-header
+			.tabs
+				//====== кнопка -переключатель таба =======
+				.tab
+					+category-card('Базовая проверка', '7 900', '33 450')
+					
+				//====== кнопка -переключатель таба =======
+				.tab
+					+category-card('Экспресс за 1 день!', '6 550', '33 450')(class="category-card--express")
+				//====== кнопка -переключатель таба =======
+				.tab
+					+category-card('Стандартная экспертиза', '10 990', '33 450')
+				//====== кнопка -переключатель таба =======
+				.tab
+					+category-card('Стандартная экспертиза', '10 990', '33 450')
+		
+		//===== основной контент ======
+		.tabs-content
+			//=======вкладка 1=======
+			.tab-item
+				.categories-single
+					//=====блок карточек======
+					.categories-single__list
+						.categories-single__list-title
+							.visible-desk.title-14 Проверка объекта
+							.visible-mob.title-14 Объект
+						.categories-single__list-content
+							//=====одна карточка======
+							+servcard("true")
+							//=====одна карточка======
+							+servcard
+							//=====одна карточка======
+							+servcard(class="service-card--disable")
+							
+					//=====блок карточек======
+					.categories-single__list
+						.categories-single__list-title
+							.visible-desk.title-14 Проверка СОБСТВЕННИКА
+							.visible-mob.title-14 СОБСТВЕННИК
+						.categories-single__list-content
+							+servcard
+							+servcard
+							+servcard
+							+servcard(class="service-card--disable")
+							+servcard(class="service-card--disable")
+							
+			//=======вкладка 2=======
+			.tab-item
+				.categories-single
+					.categories-single__list
+						.categories-single__list-title
+							.title-14 Проверка объекта
+						.categories-single__list-content
+							+servcard
+							+servcard
+							+servcard(class="service-card--disable")
+							
+					.categories-single__list
+						.categories-single__list-title
+							.title-14 Проверка СОБСТВЕННИКА
+						.categories-single__list-content
+							+servcard
+							+servcard
+							
+			//=======вкладка 3=======
+			.tab-item
+				.categories-single
+					.categories-single__list
+						.categories-single__list-title
+							.title-14 Проверка объекта
+						.categories-single__list-content
+							+servcard
+							+servcard
+					.categories-single__list
+						.categories-single__list-title
+							.title-14 Проверка СОБСТВЕННИКА
+						.categories-single__list-conten
+							+servcard
+							+servcard(class="service-card--disable")
+			//=======вкладка 4=======
+			.tab-item
+				.categories-single
+					.categories-single__list
+						.categories-single__list-title
+							.title-14 Проверка объекта
+						.categories-single__list-content
+							+servcard
+							+servcard(class="service-card--disable")
+							
+					.categories-single__list
+						.categories-single__list-title
+							.title-14 Проверка СОБСТВЕННИКА
+						.categories-single__list-content
+							+servcard
+							+servcard
+							+servcard(class="service-card--disable")
