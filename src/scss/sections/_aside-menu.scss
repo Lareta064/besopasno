@@ -48,5 +48,10 @@
 	}
 }
 .aside-menu[data-modal],.aside-menu[data-modal].visible {
-	display: flex;
+	display: flex!important;
+}
+.aside-menu.visible {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
 }

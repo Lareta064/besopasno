@@ -1,7 +1,13 @@
 extends ../layouts/layout.pug
 
 block content
+	//========gamburger-menu=========
+	include ../sections/_main-menu
+	
+	//========top-menu=========
 	+header('Проверка объекта','inner','p-118.html')(class="page-header--inner")
+	
+	//======= page-header ==========
 	.object-search
 		.page-header.header-100vh(style="background-image:url(./img/header-bg.jpg)")
 			.container
