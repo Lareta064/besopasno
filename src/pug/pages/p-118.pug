@@ -1,0 +1,31 @@
+extends ../layouts/layout.pug
+
+block content
+	+header('Проверка объекта','inner','d-117.html')(class="page-header--inner")
+	.object-search
+		.page-header.header-100vh(style="background-image:url(./img/header-bg.jpg)")
+			.container
+				.page-header__content
+					.col-712
+						.page-header-title
+							.title-2 Исключаем риски<br>при покупке недвижимости
+						form(action="" method="method")
+							.search-field
+								.search-field__decor
+									img(src="./img/decor.png", width="18" alt="alt")
+								.form-item
+									input(type="text" placeholder="Проверим объект?")
+								button.search-field__btn
+									svg.svg-close
+										use(xlink:href="./img/svg-sprite.svg#svgClose")
+			.object-search__results
+				.container
+					.cards-wrapper.col-712
+						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва','true')
+						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
+						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
+						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
+	
+	
+block variables
+	-var title = "Page";
