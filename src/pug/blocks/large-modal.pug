@@ -1,5 +1,7 @@
 //========== модалка по клику на иконку инфо на стр категорий =====================
 .modal-large.service-modal(data-modal-frame)#service-modal
+	//=====шапка на моб версии ======
+	+mobile-header('Вид проверки')(close-modal)
 	//===== close btn ============
 	.btn-close(close-modal)
 		svg.svg-close

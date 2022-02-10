@@ -1,4 +1,7 @@
 .object-search{
+	.page-header{
+		height: auto;
+	}
 	&__results{
 		.address-card__center {
 			@media(max-width:424px){

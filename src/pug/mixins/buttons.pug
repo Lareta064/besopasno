@@ -1,9 +1,9 @@
 //- простая кнопка
 mixin button(tagName, link, text, colorClass)
 	if tagName == 'a'
-		a(href=""+link class="button "+ colorClass ) #{text}
+		a(href=""+link class="button "+ colorClass )&attributes(attributes) #{text}
 	if tagName == 'button'
-		button(class="button "+ colorClass) #{text}
+		button(class="button "+ colorClass)&attributes(attributes) #{text}
 
 //- кнопка с иконкой
 mixin button-flex(tagName, link, addClass, text, svgClass, svgId)

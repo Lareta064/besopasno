@@ -34,3 +34,22 @@ mixin header(title, inner,link, search)
 					span.cart-button__icon
 						svg.svg-cart
 							use(xlink:href="../img/svg-sprite.svg#svgCart")
+
+mixin mobile-header(title, link="#")
+	header.header.header--mini&attributes(attributes)
+		.header-content
+			.header-left
+				//======= menu icon =======
+				a(href=""+link).prev-page
+					svg.svg-back
+						use(xlink:href="../img/svg-sprite.svg#svgBack")
+			.header-title
+				.title-20 #{title}
+			
+			//======= cart =======
+			.header-right
+				.cart-button
+					span мой заказ
+					span.cart-button__icon
+						svg.svg-cart
+							use(xlink:href="../img/svg-sprite.svg#svgCart")

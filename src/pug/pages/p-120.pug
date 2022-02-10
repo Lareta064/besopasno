@@ -5,7 +5,7 @@ block content
 	include ../sections/_main-menu
 	
 	//========top-menu=========
-	+header('Проверка объекта','inner','d-117.html')(class="page-header--inner")
+	+header('Проверка объекта','inner','p-118.html')(class="page-header--inner")
 	
 	//======= page-header ==========
 	.object-search
@@ -26,12 +26,36 @@ block content
 										use(xlink:href="./img/svg-sprite.svg#svgClose")
 			.object-search__results
 				.container
-					.cards-wrapper.col-712
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва','true')
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-	
-	
+					//====сообщение для десктоп версии =========
+					.modal-frame.modal-frame--short.modal-frame--notfound
+						.modal-frame-content
+							.container-slim
+								.modal-frame__img
+									.icon-not
+										svg.svg-stop
+											use(xlink:href="../img/svg-sprite.svg#svgStop")
+								.modal-frame__text
+									.title-20 Адрес не найден
+									.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
+						.modal-frame__footer
+							.container-slim
+								.container-slim
+									+button('button', '', 'Перейти в каталог услуг', 'button--blue')
+
+					//====сообщение для моб версии =========
+					.modal-frame.modal-frame--small.modal-frame--notfound.visible(data-modal="notfound")
+						.modal-close.btn-close
+							svg.svg-close(data-close)
+								use(xlink:href="../img/svg-sprite.svg#svgClose")
+						.modal-frame-content
+							.modal-frame__text
+								.title-20
+									.icon-not-small
+										svg.svg-stop
+											use(xlink:href="../img/svg-sprite.svg#svgStop")
+									|Адрес не найден
+								.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
+							.modal-frame__footer
+								+button('button', '', 'ok', 'button--blue button--short h-40' )(data-close)
 block variables
 	-var title = "Page";
