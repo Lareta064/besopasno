@@ -1,0 +1,15 @@
+.object-search{
+	&__results{
+		.address-card__center {
+			@media(max-width:424px){
+				padding-right: 8px;
+			}
+		}
+		
+	}
+	@media(min-width:1200px) and (max-width: 1279px) {
+		.col-712 {
+			width: 55%;
+		}
+	}
+}
