@@ -73,3 +73,26 @@
 		}
 	}
 }
+.categody-cards__wrapper{
+	justify-content: flex-start;
+	.category-card+.category-card{margin-left: 16px;}
+	
+		overflow: hidden;
+		overflow-x: auto;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+			height: 0;
+			width: 0;
+		}
+
+		@media(max-width:767px) {
+			width: calc(50% + 50vw);
+			padding-left: 17px;
+			padding-right: 17px;
+
+		}
+	
+	
+}

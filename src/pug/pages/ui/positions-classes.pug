@@ -1,0 +1,94 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Вспомогрательные классы
+
+				.container-dashboard__content
+					.block(style="margin-top:50px;")
+						pre.
+							.flex-row {
+									display: flex;
+								}
+					.block(style="margin-top:50px;")
+						pre.
+							.flex-wrapper {
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+							}
+					.block(style="margin-top:50px;")
+						pre.
+							.flex-wrapper {
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+							}
+					.block(style="margin-top:50px;")
+						pre.
+							.wrapper-608 {
+								max-width: 608px;
+							}
+					.block(style="margin-top:50px;")
+						pre.
+							.text-left{
+								text-align: left;
+							}
+					.block(style="margin-top:50px;")
+						pre.
+							.wrapper-pt32{
+								padding-top: 32px;
+							}
+
+					.block(style="margin-top:50px;")
+						pre.
+							.container.container-p0 {
+								@media(max-width:767px) {
+									padding-left: 0;
+									padding-right: 0;
+								}
+							}
+					.block(style="margin-top:50px;")
+						pre.
+							.p-40 {
+								padding-top: 2.5rem;
+								padding-bottom: 2.5rem;
+
+								@media(max-width:767px) {
+									padding-top: 1rem;
+								}
+							}
+					.block(style="margin-top:50px;")
+						pre.
+							.col-712 {
+								width: 60%;
+								max-width: 44.5rem;
+
+								@media(max-width:767px) {
+									width: 100%;
+								}
+							}
+
+
+					.block(style="margin-top:50px;")
+						pre.
+							.header-100vh {
+								min-height: calc(100vh - 64px);
+							}

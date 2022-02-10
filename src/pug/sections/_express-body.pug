@@ -3,7 +3,39 @@
 	.categories-body.p-40
 		.container
 			.categories-body__content
-				include _categories-tabs.pug
+				.categories-body__left
+					.categody-cards__wrapper.flex-wrapper
+						+category-card('Базовая проверка', '7 900', '33 450')
+						+category-card('Экспресс за 1 день!', '6 550', '33 450')(class="category-card--express")
+						+category-card('Стандартная экспертиза', '10 990', '33 450')(class="category-card--active")
+						+category-card('Стандартная экспертиза', '10 990', '33 450')
+
+					.wrapper-pt32
+						.categories-single
+							//=====блок карточек======
+							.categories-single__list
+								.categories-single__list-title
+									.visible-desk.title-14 Проверка объекта
+									.visible-mob.title-14 Объект
+								.categories-single__list-content
+									//=====одна карточка======
+									+servcard("true")
+									//=====одна карточка======
+									+servcard
+									//=====одна карточка======
+									+servcard(class="service-card--disable")
+									
+							//=====блок карточек======
+							.categories-single__list
+								.categories-single__list-title
+									.visible-desk.title-14 Проверка СОБСТВЕННИКА
+									.visible-mob.title-14 СОБСТВЕННИК
+								.categories-single__list-content
+									+servcard
+									+servcard
+									+servcard
+									+servcard(class="service-card--disable")
+									+servcard(class="service-card--disable")
 
 				//=====правый сайдбар======
 				.categories-aside

@@ -178,7 +178,6 @@ input[type="submit"] {
 .flex-wrapper,
 .flex-row {
 	display: flex;
-
 }
 
 .flex-wrapper {
@@ -191,6 +190,12 @@ input[type="submit"] {
 }
 .text-left{
 	text-align: left;
+}
+.wrapper-pt32{
+	padding-top: 32px;
+	@media(max-width:767px){
+		padding-top: 24px;
+	}
 }
 .container {
 	width: 100%;
@@ -246,18 +251,6 @@ input[type="submit"] {
 
 .header-100vh {
 	min-height: calc(100vh - 64px);
-}
-
-/* TABS*/
-.tabs-wrapper {
-	.tabs {
-		display: flex;
-	}
-
-	.tab {
-		cursor: pointer;
-	}
-
 }
 
 .wrapper-drop {
