@@ -11,8 +11,14 @@
 	line-height: 1.175;
 	color: #fff;
 	letter-spacing: 0.25px;
+	@media(max-width:1199px) {
+		font-size: 32px;
+	}
+	@media(max-width:1023px) {
+		font-size: 28px;
+	}
 	@media(max-width:767px) {
-		font-size: 1.25rem;
+		font-size: 24px;
 	}
 }
 .title-24{

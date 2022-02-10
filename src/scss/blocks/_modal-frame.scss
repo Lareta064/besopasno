@@ -6,6 +6,12 @@
 	background-color: #fff;
 	box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
 	height: 800px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	transform:translateX(110%);
+	transition: .5s;
 	&__img{
 		padding-top: 40px;
 		display: flex;
@@ -92,6 +98,9 @@
 	}
 	.button + .button{
 		margin-top: 16px;
+	}
+	&.visible{
+		transform: translateX(0);
 	}
 }
 

@@ -4,15 +4,20 @@ mixin header(title, inner,link, search)
 			.header-left
 				if inner == 'inner'
 					//======= menu icon =======
+					a(href=""+link).prev-page
+						svg.svg-back
+							use(xlink:href="../img/svg-sprite.svg#svgBack")
+				else	
+					//======= menu icon =======
 					.header-menu(data-btn="main-menu")
 						.header-menu__icon
 							span
 						.header-menu__title меню
 					
-					//======= menu icon =======
-					a(href=""+link).prev-page
-						svg.svg-back
-							use(xlink:href="../img/svg-sprite.svg#svgBack")
+				//- //======= menu icon =======
+				//- a(href=""+link).prev-page
+				//- 	svg.svg-back
+				//- 		use(xlink:href="../img/svg-sprite.svg#svgBack")
 			
 			
 			//======= logo =======

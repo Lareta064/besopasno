@@ -75,14 +75,14 @@ document.addEventListener("DOMContentLoaded", function (){
 		}
 	}
 	/*=======// ===== - Скрипт #3 -  ====== ТАБЫ========== */
-	$('.tabs-wrapper').each(function() {
-		let ths = $(this);
-		ths.find('.tab-item').not(':first').hide();
-		ths.find('.tab').click(function() {
-			ths.find('.tab').removeClass('active').eq($(this).index()).addClass('active');
-			ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
-		}).eq(0).addClass('active');
-	});
+	// $('.tabs-wrapper').each(function() {
+	// 	let ths = $(this);
+	// 	ths.find('.tab-item').not(':first').hide();
+	// 	ths.find('.tab').click(function() {
+	// 		ths.find('.tab').removeClass('active').eq($(this).index()).addClass('active');
+	// 		ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
+	// 	}).eq(0).addClass('active');
+	// });
 
 	/* по клику на карточку адреса показать окно modal-reestr p-121.html*/
 	const addressItems = document.querySelectorAll('[data-address]');
@@ -111,8 +111,32 @@ document.addEventListener("DOMContentLoaded", function (){
 			});
 		}
 	}
-	
-	
+
+	/* ==============показать модальные окна, типа ввести данные об объекте, авторизации такие модальные окна имеют атрибут frame-modal , кнопка, которая его показывает , имеет атрибут frame-btn, Чтобы закрыть такое окно, прописываем кнопке закрытия атрибут frame-close*/
+	const modalFramesOpen = document.querySelectorAll('[frame-btn]');
+	if( modalFramesOpen.length > 0){
+		const modalFrames = document.querySelectorAll('[frame-modal]');
+		const modalFramesClose = document.querySelectorAll('[frame-close]');
+		for(let item of modalFramesOpen){
+			item.addEventListener('click', function(e){
+				e.preventDefault();
+				const itemAttr = item.getAttribute('frame-btn');
+				for(let frame of modalFrames){
+					const frameAttr =frame.getAttribute('frame-modal');	
+					if(frameAttr == itemAttr){
+						frame.classList.add('visible');
+					}
+				}
+			});
+		}
+		/*закрыть модалки с атрибутом frame-modal*/
+		for(let item of modalFramesClose){
+			item.addEventListener('click', function(e){
+				e.preventDefault();
+				item.closest('[frame-modal]').classList.remove('visible');
+			});
+		}
+	}
 	//========большой сладер документов =======//
 	let docSlider = new Swiper(".doc-slider", {
        slidesPerView: 1,

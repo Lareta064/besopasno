@@ -1,5 +1,5 @@
-.modal-frame
-	.modal-close.btn-close
+.modal-frame(frame-modal="enter-object-data")
+	.modal-close.btn-close(frame-close)
 		svg.svg-close
 			use(xlink:href="../img/svg-sprite.svg#svgClose")
 	.modal-frame-content
@@ -14,4 +14,4 @@
 	.modal-frame__footer
 		.container-slim
 			+button('button', '', 'Да, конечно', 'button--blue')
-			+button('button', '', 'Не сейчас', 'button--white')
+			+button('button', '', 'Не сейчас', 'button--white')(frame-close)

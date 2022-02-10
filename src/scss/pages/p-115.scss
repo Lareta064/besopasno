@@ -1,0 +1,40 @@
+.header--light{
+	background: $blueBg;
+	padding-top: 72px;
+	padding-bottom: 80px;
+	.title-2 {
+		width: 80%;
+		max-width: 712px;
+	}
+	@media(max-width:1199px) {
+		min-height: 184px;
+		height: auto;
+		padding-top: 48px;
+		padding-bottom: 56px;
+
+		.title-2 {
+			width: 80%;
+			max-width: 580px;
+		}
+	}
+
+	@media(max-width:767px) {
+		padding-top: 32px;
+	}
+		@media(max-width:574px) {
+			padding-top: 20px;
+		}
+}
+.category-page{
+	.header--light{
+		padding-bottom: 56px;
+		.page-header-title {
+			display: block;
+		}
+	}
+	@media(max-width:767px){
+		.categories {
+			margin-top: -70px;
+		}
+	}
+}

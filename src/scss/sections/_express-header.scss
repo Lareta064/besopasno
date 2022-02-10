@@ -25,6 +25,11 @@
 		font-size: 28px;
 	}
 }
+.express-header.express-header--inner{
+	background: $blueBg;
+	background-image:none;
+	padding-top: 48px;
+}
 .page-header {
 	padding-top: 3rem;
 	overflow: hidden;
