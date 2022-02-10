@@ -20,12 +20,17 @@ block content
 										use(xlink:href="./img/svg-sprite.svg#svgClose")
 			.object-search__results
 				.container
-					.cards-wrapper.col-712
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-						+address-card-mini('г. Зеленоград, ул. Юности','г. Москва')
-	
-	
+					.col-712.wrapper-drop
+						.wrapper-drop__header
+							.title-16 Найденные варианты
+								span.icon-caret
+									i
+						.wrapper-drop__body
+							+address-card
+							+address-card
+							+address-card
+							+address-card
+
+		include ../blocks/reestr-data
 block variables
 	-var title = "Page";
