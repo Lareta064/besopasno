@@ -1,5 +1,5 @@
-mixin category-card(title, pr1, pr2)
-	.category-card&attributes(attributes)
+mixin category-card(title, pr1, pr2, link="#")
+	a(href=""+ link).category-card&attributes(attributes)
 		.category-card__icon
 			span.icon-check
 		.category-card__info
