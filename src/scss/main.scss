@@ -27,18 +27,23 @@
 
  @import "sections/aside-menu";
  @import "sections/header-menu";
- @import "sections/express-header";
+
 //  @import "sections/category-tabs";
  @import "sections/category-cards-section";
  @import "sections/address-search-result";
- @import "sections/footer";
+ 
+ // pagesexpress
+ @import "sections/express-header";
 
-// pages
  @import "pages/p-115";
  @import "pages/p-117";
  @import "pages/p-118";
  @import "pages/p-119";
  @import "pages/p-120";
+ @import "sections/footer";
+ 
+  // page check-object
+  @import "sections/check-object-header";
  
  //ui
  @import "ui/_ui-navigation";

@@ -19,17 +19,7 @@ html(lang="ru")
 
 		block content
 			.container-dashboard
-				h2 хлебные крошки
+				h2 Проверка объекта - шапка
 
 				.container-dashboard__content
-					+breadcrumbs(
-						{link: "#", text: 'Профиль'},
-						{link: "#", text: 'Список заказов'},
-						{link: "#", text: 'Проверка продавца'},
-						)
-				pre.
-					+ breadcrumbs(
-					{link: "#", text: 'Профиль'},
-					{link: "#", text: 'Список заказов'},
-					{link: "#", text: 'Проверка продавца'},
-					)
+					include ../../sections/_check-object-header.pug

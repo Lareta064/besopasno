@@ -11,3 +11,9 @@ mixin icon-group(svgClass, svgId, text)
 		svg(class="svg-"+svgClass)
 			use(xlink:href="../img/svg-sprite.svg#svg"+ svgId)
 		span !{text}
+
+//-ьексьлвая карточка
+mixin text-card(title, text)
+	.text-card&attributes(attributes)
+		.title-16.text-upper !{title}
+		.body-2 !{text}

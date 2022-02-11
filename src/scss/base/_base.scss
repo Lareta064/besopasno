@@ -86,7 +86,15 @@ body {
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 }
-
+.body-flex{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	.footer{
+		margin-top: auto;
+		padding-right: 520px;
+	}
+}
 .noscroll {
 	overflow: hidden;
 	touch-action: none;
@@ -196,6 +204,21 @@ input[type="submit"] {
 	@media(max-width:767px){
 		padding-top: 24px;
 	}
+}
+.page-grid{
+	display: flex;
+	flex-direction: column;
+	&__left >*{
+		padding-right: 520px;
+	}
+	&__right{
+		width: 504px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
 }
 .container {
 	width: 100%;

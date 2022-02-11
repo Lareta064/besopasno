@@ -1,0 +1,16 @@
+//===== express page header ======
+
+.check-object__header
+	.container
+		+breadcrumbs(
+			{link: "#", text: 'Профиль'},
+			{link: "#", text: 'Список заказов'},
+			{link: "#", text: 'Проверка продавца'},
+			)
+		
+		.check-object__header-content
+			.title-24 Отчет по объекту
+			+address-card
+			.badge-group
+				.badge.badge--white всего прав 5
+				.badge.badge--white Обременений 5
