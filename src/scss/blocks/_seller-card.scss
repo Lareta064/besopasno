@@ -1,0 +1,76 @@
+.seller-card {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	padding-left: 16px;
+	padding-right: 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #F3F3F3;
+	&__center {
+		flex-grow: 2;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	&-icon {
+		width: 56px;
+		height: 56px;
+		background: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(#F0F0F0));
+		background: -o-linear-gradient(top, #F7F7F7 0%, #F0F0F0 100%);
+		background: linear-gradient(180deg, #F7F7F7 0%, #F0F0F0 100%);
+		border-radius: 5.8px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	&_right {
+		margin-left: auto;
+		flex-shrink: 0;
+		.chevron-right {
+			display: flex;
+		}
+	}
+	.title-16 {
+		color: #1E4159;
+	}
+	.text-12 {
+		color: #7c7c7c;
+	}
+	.text-12+.text-12 {
+		margin-top: 8px;
+	}
+	&:hover {
+		.svg-chevron {
+			fill: $darkBlue;
+		}
+
+		.text-12,
+		.title-16 {
+			color: $darkBlue;
+		}
+	}
+	@media(max-width:767px) {
+		background-color: transparent;
+
+		&__right {
+			display: none;
+		}
+
+		&-icon {
+			background: #fff;
+
+			svg {
+				fill: #fff;
+			}
+		}
+
+	}
+}

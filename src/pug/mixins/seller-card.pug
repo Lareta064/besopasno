@@ -1,0 +1,14 @@
+mixin seller-card(text1, text2, text3)
+	.seller-card&attributes(attributes)
+		.seller-card__left
+			.seller-card-icon
+				svg.svg-seller
+					use(xlink:href="../img/svg-sprite.svg#svgSeller")
+		.seller-card__center
+			.title-16 !{text1}
+			.text-12 !{text2}
+			.text-12 !{text3}
+		.seller-card__right
+			.chevron-right
+				svg.svg-edit
+					use(xlink:href="../img/svg-sprite.svg#svgEdit")

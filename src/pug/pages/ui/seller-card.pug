@@ -19,19 +19,10 @@ html(lang="ru")
 
 		block content
 			.container-dashboard
-				h2 Карточка Экспресс данные
-				+express-card('Суды','svg-warning','svgWarning')
+				h2 Карточка Продавца
+				+seller-card('Иванов Иван Иванович', 'ИНН: ХХХХХХХХХХХ', 'Год рождения: 12.11.1987')
 				pre.
-					+express-card('Суды','svg-warning','svgWarning')
-				+express-card('Розыск','svg-warning','svgWarning', 'status-yellow')
-				pre.
-					+express-card('Розыск','svg-warning','svgWarning', 'status-yellow')
-				+express-card('Розыск', 'svg-done','svgDone','status-green')
-				pre.
-					+express-card('Розыск', 'svg-done','svgDone','status-green')
-
-
-				
+					+seller-card('Иванов Иван Иванович', 'ИНН: ХХХХХХХХХХХ', 'Год рождения: 12.11.1987')
 		
 		script(src="../libs/jquery/jquery-3.0.0.min.js")
 		script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
