@@ -226,3 +226,41 @@
 
 	max-width: 296px;
 }
+.legend-item{
+	font-size: .75rem;
+	line-height: 1rem;
+	letter-spacing: 0.2px;
+	display: inline-block;
+
+	span {
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		margin-right: 4px;
+		border-radius: 50%;
+		background-color: #EAB720;
+
+	}
+
+	&--blue {
+		span {
+			background-color: #76A5C3;
+
+		}
+	}
+
+	&--red {
+		span {
+			background-color: #FF002E;
+
+		}
+	}
+
+	&--disable {
+		opacity: .3;
+	}
+
+	&+.legend-item {
+		margin-left: 12px;
+	}
+}

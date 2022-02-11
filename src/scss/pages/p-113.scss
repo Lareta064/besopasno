@@ -2,5 +2,10 @@
 	&-content{
 		padding-top: 24px;
 		padding-bottom: 56px;
+		overflow: hidden;
+	}
+	&__categories-title{
+		line-height: 1.5;
+		padding-bottom: 8px;
 	}
 }

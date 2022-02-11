@@ -11,7 +11,7 @@ block content
 			include ../sections/_check-object-header
 			.check-object-content
 				.container
-					.check-object-table
+					//====окно с рекомендациями =======
 					.page-grid__right
 						.right-modal.right-modal--static.right-modal--active
 							.right-modal-content
@@ -24,6 +24,24 @@ block content
 										.button-group__top.text-center
 											.text-12.text-dark Рекомендуемый для Вас состав проверки
 										+double-button('Оформить', '19 9999 &#8381;')
+					
+					//====таблица =======
+					.check-object-table.pt-32
+
+					//====текстовая карточка =======
+					.check-object__textcard.pt-32
+						+text-card('ФИНАНСОВАЯ ГАРАНТИЯ СДЕЛКИ', 'Мы дадим финансовую гарантию безопасности сделки на всю сумму договора покупки')
+					//====текстовая карточка =======
+					.check-object__categories.pt-32
+						.check-object__categories-title
+							.text-16 Другие варианты комплексной проверки
+						.categody-cards__wrapper.flex-wrapper
+							+category-card('Базовая проверка', '7 900', '33 450','p-117.html')
+							+category-card('Экспресс за 1 день!', '6 550', '33 450','p-117.html')(class="category-card--express")
+							+category-card('Стандартная экспертиза', '10 990', '33 450','p-117.html')(class="category-card--active")
+							+category-card('Стандартная экспертиза', '10 990', '33 450','p-117.html')
+					
+	//====кнопка с ценой, прибитая к низу экрана на моб версии =======				
 	.page-mobile-fix-bottom
 		.button-group-2
 			.button-group__top.text-center
@@ -33,5 +51,5 @@ block content
 	include ../sections/_footer
 	
 block variables
-	-var title = "Expresss | главная";
+	-var title = "Проверить объект | главная";
 	- var bodyCl = "body-flex"

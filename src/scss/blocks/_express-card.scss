@@ -1,0 +1,68 @@
+.express-card {
+	border: 1px solid #F3F3F3;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding-left: 11px;
+	padding-right: 11px;
+	height: 64px;
+
+	.express-card__center {
+		max-width: 216px;
+		padding-left: 11px;
+	}
+
+	.express-card-type {
+		.text-12 {
+			color: #B5B5B5;
+			margin-bottom: 2px;
+		}
+	}
+
+	.express-card__task {
+		.text-12 {
+			color: #333;
+		}
+	}
+
+	.express-card__right {
+		font-family: $rm;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.1px;
+		color: #FF002E;
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+
+		.svg-chevron {
+			width: 7px;
+			height: 12px;
+			margin-left: 16px;
+		}
+	}
+}
+
+.express-card+.express-card {
+	margin-top: 16px;
+}
+
+.express-card.status-yellow {
+	.express-card__left {
+		svg {
+			fill: $yellow;
+		}
+	}
+
+	.express-card__right {
+		color: $yellow;
+	}
+}
+
+.express-card.status-green {
+
+	.express-card__right {
+		color: $green;
+
+	}
+}

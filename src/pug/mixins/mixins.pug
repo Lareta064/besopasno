@@ -12,8 +12,50 @@ mixin icon-group(svgClass, svgId, text)
 			use(xlink:href="../img/svg-sprite.svg#svg"+ svgId)
 		span !{text}
 
-//-ьексьлвая карточка
+//-текстовая карточка
 mixin text-card(title, text)
 	.text-card&attributes(attributes)
 		.title-16.text-upper !{title}
 		.body-2 !{text}
+//-лейбл в таблице объекта
+mixin persone-label(personeName="Петров А.И.", addClass)
+	if addClass
+		.person-label(class=" person-label--"+ addClass)
+			span #{personeName}
+			.info-icon
+				svg.svg-info
+					use(xlink:href="../img/svg-sprite.svg#svgInfo")
+	else
+		.person-label
+			span #{personeName}
+			.info-icon
+				svg.svg-info
+					use(xlink:href="../img/svg-sprite.svg#svgInfo")
+//- лейбл у таблицы объекта 1909 
+mixin table-flag(text1,  addClass, text2)
+	div(class=(addClass !=='' ? "table-flag table-flag--"+ addClass : "table-flag"))
+		.body-2 #{text1}
+		if text2
+			.text-10 #{text2}
+
+mixin legend-item(text, addClass)
+	div(class=(addClass !=='' ? "legend-item legend-item--"+ addClass : "legend-item"))
+		span
+		| #{text}
+	
+//- карточка экспресс-данные
+mixin express-card(title, svgcl, svgid, cl)
+	.express-card(class=""+ cl)
+		.express-card__left
+			svg(class=""+ svgcl)
+				use(xlink:href="../img/svg-sprite.svg#"+svgid)
+		.express-card__center
+			.express-card-type
+				.text-12 #{title}
+			.express-card__task
+				.text-12 Требуется уточнить обстоятельства розыска
+
+		.express-card__right
+			span 2
+			svg.svg-chevron
+				use(xlink:href="../img/svg-sprite.svg#svgChevron")

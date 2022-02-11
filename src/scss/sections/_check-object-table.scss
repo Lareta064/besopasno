@@ -2,4 +2,49 @@
 	height: 200px;
 	border:5px solid red;
 	max-width: 600px;
-}	
+}
+.table-flag {
+	min-width: 80px;
+	height: 48px;
+	background: #F0F0F0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.body-2 {
+		font-family: $rm;
+	}
+
+	width:fit-content;
+
+}
+
+.table-flag:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 24px solid #F0F0F0;
+	bottom: -12px;
+	z-index: -1;
+	border-right: 0px;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+
+.table-flag--dark {
+	&>* {
+		color: #fff;
+	}
+
+	background-color: #333333;
+
+	&:after {
+		border-left-color: #333333;
+		;
+	}
+}
