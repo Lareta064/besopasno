@@ -21,7 +21,8 @@
 		min-height: 100vh;
 		bottom:0;
 		left:0;
-		padding-bottom: 32px;
+		padding-bottom: 40px;
+		padding-top: 40px;
 	}
 	&__img{
 		padding-top: 40px;
@@ -53,9 +54,12 @@
 		padding-top: 32px;
 		padding-bottom: 24px;
 		text-align: center;
+		&+form{padding-top: 0;}
 		.title-24{
 			margin-bottom: 16px;
 		}
+		.title-20 {padding-bottom: 20px;}
+		.text-16{line-height: 1.5;}
 	}
 	&__footer{
 		padding-top: 32px;

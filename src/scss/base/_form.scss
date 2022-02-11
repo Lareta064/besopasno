@@ -106,3 +106,49 @@
 .modal-frame form{
 	padding-top: 24px;
 }
+.form-item--code {
+	width: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 16px;
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		content: '';
+		width: 10px;
+		height: 5px;
+		background-color: #fff;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	input {
+		border: 0;
+		width: 160px;
+		color: #121212;
+		font-family: $rm;
+		font-size: 20px;
+		padding: 0;
+		padding-left: 6px;
+		border-radius: 0;
+		letter-spacing: 20px;
+		display: inline;
+		background-image: linear-gradient(to right, #4FB8FF 75%, transparent 75%);
+		background-position: 0 bottom;
+		background-repeat: repeat-x;
+		background-size: 32px 2px;
+	}
+	
+}
+.repeat-code .text-14 {
+	color: #3F5867;
+	padding: 5px;
+	display: block;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
