@@ -24,6 +24,16 @@
 			color: $dark;
 		}
 		ul{li+li{margin-top: 16px;}}
+		.flex-wrapper {
+			padding-bottom: 16px;
+			.text-12{color: #7c7c7c;}
+			.text-14 {
+				padding-bottom: 0;
+			}
+		}
+		&+.modal-frame__block {
+			padding-top: 16px;
+		}
 	}
 	.login-social{margin-top: auto;}
 	@media(max-width:767px){
