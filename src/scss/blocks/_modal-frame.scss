@@ -12,6 +12,12 @@
 	z-index: 10;
 	transform:translateX(110%);
 	transition: .5s;
+	@media(max-width:767px){
+		height: auto;
+		min-height: 100vh;
+		bottom:0;
+		left:0;
+	}
 	&__img{
 		padding-top: 40px;
 		display: flex;
