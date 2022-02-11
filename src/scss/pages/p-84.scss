@@ -1,11 +1,8 @@
-.check-object{
-	&-content{
-		padding-top: 24px;
-		padding-bottom: 56px;
-		overflow: hidden;
+.check-object__title{
+	padding-bottom: 16px;
+	.text-14{
+		color: $dark;
+		text-transform: uppercase;
 	}
-	&__categories-title{
-		line-height: 1.5;
-		padding-bottom: 8px;
-	}
+	
 }

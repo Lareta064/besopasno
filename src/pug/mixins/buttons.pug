@@ -22,8 +22,8 @@ mixin button-flex(tagName, link, addClass, text, svgClass, svgId)
 			
 
 //- кнопка с разделением по центру
-mixin double-button(text1, text2)
-	button.button.double-button&attributes(attributes)
+mixin double-button(text1, text2, addClass)
+	button.button.double-button(class=(addClass ? " "+ addClass : ""))&attributes(attributes)
 		.double-button__left
 			.title-20 !{text1}
 		.double-button__right

@@ -253,10 +253,12 @@ input[type="submit"] {
 		right: 0;
 		bottom: 0;
 	}
-	.container{max-width:80rem;}
+	.container{max-width:80rem;
+		padding-right:440px;
+	}
 	@media(max-width: 1599px){
 		&__left .container{
-		padding-right:440px;
+		
 		padding-left: 0;
 	}
 
@@ -333,9 +335,7 @@ input[type="submit"] {
 		padding-top: 1rem;
 	}
 }
-.pt-32{
-	padding-top: 32px;
-}
+
 .col-712 {
 	width: 60%;
 	max-width: 44.5rem;

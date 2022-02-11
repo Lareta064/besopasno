@@ -1,0 +1,14 @@
+//===== express page header ======
+
+.check-object__header
+	.container
+		+breadcrumbs(
+			{link: "#", text: 'Профиль'},
+			{link: "#", text: 'Список заказов'},
+			{link: "#", text: 'Проверка продавца'},
+			)
+		
+		.check-object__header-content
+			.title-24 Проверка продавца
+			+seller-card('Иванов Иван Иванович', 'ИНН: ХХХХХХХХХХХ', 'Год рождения: 12.11.1987')
+			

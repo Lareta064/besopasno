@@ -9,30 +9,31 @@ block content
 	.check-object.page-grid
 		.page-grid__left
 			include ../sections/_check-object-header
-			.check-object-content.page-grid-container
+			.check-object-content
 				.container
 					//====окно с рекомендациями =======
-					.page-grid__right
-						.right-modal.right-modal--static.right-modal--active
-							.right-modal-content
-								.right-modal__header
-									.title-20 Рекомендации
-								.right-modal__body
-									+list-types('marker-list', 'Нужно проверить текущих и предведущих собственников', 'Проерить притензии по объекту т.к. были аресты и запрещения', 'Проерить притензии по объекту т.к. были аресты и запрещения', 'Заказать комплексную проверку с правовым сертификатом')
-								.right-modal__footer
-									.button-group-2
-										.button-group__top.text-center
-											.text-12.text-dark Рекомендуемый для Вас состав проверки
-										+double-button('Оформить', '19 9999 &#8381;')
+					.check-object-block.check-object-block--mobile
+						.page-grid__right
+							.right-modal.right-modal--static.right-modal--active
+								.right-modal-content
+									.right-modal__header
+										.title-20 Рекомендации
+									.right-modal__body
+										+list-types('marker-list', 'Нужно проверить текущих и предведущих собственников', 'Проерить притензии по объекту т.к. были аресты и запрещения', 'Проерить притензии по объекту т.к. были аресты и запрещения', 'Заказать комплексную проверку с правовым сертификатом')
+									.right-modal__footer
+										.button-group-2
+											.button-group__top.text-center
+												.text-12.text-dark Рекомендуемый для Вас состав проверки
+											+double-button('Оформить', '19 9999 &#8381;')
 					
 					//====таблица =======
-					.check-object-table.pt-32
-
+					.check-object-block
+						.check-object-table
 					//====текстовая карточка =======
-					.check-object__textcard.pt-32
+					.check-object-block
 						+text-card('ФИНАНСОВАЯ ГАРАНТИЯ СДЕЛКИ', 'Мы дадим финансовую гарантию безопасности сделки на всю сумму договора покупки')
 					//====текстовая карточка =======
-					.check-object__categories.pt-32
+					.check-object-block
 						.check-object__categories-title
 							.text-16 Другие варианты комплексной проверки
 						.categody-cards__wrapper.flex-wrapper
