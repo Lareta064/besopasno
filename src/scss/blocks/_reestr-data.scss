@@ -1,5 +1,4 @@
-.right-modal,
-.reestr-modal {
+.right-modal{
 	width: 100%;
 	max-width: 520px;
 	position: fixed;
@@ -31,19 +30,44 @@
 
 	&__body {
 		padding-top: 2em;
-		padding-bottom: 4em;
+		padding-bottom: 24px;
 	}
-
+	&__footer {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 	.button {
 		letter-spacing: -0.2px;
 		font-size: 16px;
 	}
 }
 
-.right-modal.right-modal--active, .reestr-modal.reestr-modal--active {
+.right-modal.right-modal--active{
 	transform: translateX(0);
 }
-
+/* статичное окно справа на стр 112*/
+.right-modal.right-modal--static{
+	@media(max-width:1279px){
+		max-width: 370px;
+	}
+	@media(max-width:1023px) {
+		position: relative;
+		padding: 16px;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+		border-radius: 4px;
+		max-width: 100%;
+		width: 100%;
+		.right-modal-content {
+			max-width: 100%;
+		}
+		
+	}
+	@media(max-width:767px){
+		.right-modal__footer{
+			display: none;
+		}
+	}
+}
 .reestr-modal {
 	align-items: center;
 	padding-top: 0;
@@ -83,7 +107,7 @@
 			}
 		}
 
-		&-content {
+		.right-modal-content {
 			padding-top: 24px;
 			padding-bottom: 24px;
 			display: flex;
@@ -92,8 +116,8 @@
 			max-width: 100%;
 		}
 
-		&__header,
-		&__body {
+		.right-modal__header,
+		.right-modal__body {
 			padding-left: 16px;
 			padding-right: 16px;
 			max-width: 352px;
@@ -101,7 +125,7 @@
 			margin-right: auto;
 		}
 
-		&__footer {
+		.right-modal__footer {
 			box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
 			margin-top: auto;
 			padding: 16px;

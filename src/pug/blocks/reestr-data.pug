@@ -4,16 +4,16 @@
 	.reestr-modal-address
 		+address-card
 	//======основной контент модального окна реестра =====
-	.reestr-modal-content
-		.reestr-modal__header
+	.right-modal-content
+		.right-modal__header
 			img(src="../img/reestr.png", width="32" alt="alt")
 			.title-20 Найдены данные <br> из Росреестра с 1998г
-		.reestr-modal__body
+		.right-modal__body
 			+reestr-list(
 				{text1: 'История перехода прав',text2: '4 записи'},
 				{text1: 'История обременений',text2: '5 записей'},
 				{text1: 'Действующие права',text2: '3 записи'},
 				{text1: 'Действующие обременения',text2: '1 запись'}
 				)
-		.reestr-modal__footer
+		.right-modal__footer
 			+button-flex('a', '#!', 'button--reverse button--light', 'Получить рекомендации',  'chevron', 'Chevron')

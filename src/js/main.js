@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", function (){
 					if(j == i){
 						if(addressItems[j].classList.contains('address-card--current')){
 							addressItems[j].classList.remove('address-card--current');
-							document.querySelector('#reestr-modal').classList.remove('reestr-modal--active');
+							document.querySelector('#reestr-modal').classList.remove('right-modal--active');
 						}
 						else{
-							document.querySelector('#reestr-modal').classList.add('reestr-modal--active');
+							document.querySelector('#reestr-modal').classList.add('right-modal--active');
 							addressItems[j].classList.add('address-card--current')	;		
 						}
 					}
