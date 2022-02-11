@@ -70,20 +70,25 @@ html(lang="ru")
 
 
 					.block(style="margin-top:50px;")
-						.form-item
-							span.fake-placeholder ФИО
-							input(type="text" )
-
+						+form-item('text', 'ФИО', '')
+						
 						pre.
-							.form-item
-								span.fake-placeholder ФИО
-								input(type="text" )
+							+form-item('text', 'ФИО', '')
 					
 					.block(style="margin-top:50px;")
-						.form-item
-							span.fake-placeholder Дата рождения
-							input(type="date" name="")
+						+form-item('date', 'Дата рождения', '')
+						
 						pre.
-							.form-item
-								span.fake-placeholder Дата рождения
-								input(type="date" )
+							+form-item('date', 'Дата рождения', '')
+					
+					.block(style="margin-top:50px;")
+						+form-item('text', 'Моб. телефон', 'phone', '+7 (——— ) ——— - —— - ——')
+						
+						pre.
+							+form-item('text', 'Моб. телефон', 'phone', '+7 (——— ) ——— - —— - ——')
+					
+					.block(style="margin-top:50px;")
+						+form-item('text', 'Сообщение', 'message', 'Введите ваше сообщение',  'textarea')
+						pre.
+							+form-item('text', 'Сообщение', 'message', 'Введите ваше сообщение',  'textarea')
+						

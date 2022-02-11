@@ -1,0 +1,28 @@
+
+.modal-frame.modal-frame--step1
+	.modal-close.btn-close
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+	.modal-frame-content
+		.container-slim
+			.title-2 Авторизация
+			.modal-frame__img
+				img(src="../img/login.png", width="168" alt="img")
+			.modal-frame__text
+				.title-20 Укажите телефон для входа
+				form
+					.form
+
+	.modal-frame__footer
+		.container-slim
+			+button('button', '', 'Да, всё верно', 'button--blue')
+			+button('button', '', 'Нет, вы ошиблись', 'button--white')
+	
+	.login-social
+		.text-14 Вход через месенджер
+		+social-block(
+			{link: "#", socClass:"icon-tg"},
+			{link: "#", socClass:"icon-wa"},
+			{link: "#", socClass:"icon-mess"},
+			{link: "#", socClass:"icon-vk"}
+			)

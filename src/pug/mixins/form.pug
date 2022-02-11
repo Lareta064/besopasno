@@ -1,0 +1,15 @@
+mixin form-item(inpType = 'text', place, impName='', defaultPlace,  tagTextarea)
+	if !tagTextarea
+		if defaultPlace
+			.form-item&attributes(attributes)
+				span.fake-placeholder #{place}
+				input(type=""+ inpType name=""+ impName  placeholder=""+ defaultPlace )
+		else
+			.form-item&attributes(attributes)
+				span.fake-placeholder #{place}
+				input(type=""+ inpType name=""+ impName)
+	else
+		.form-item
+			span.fake-placeholder #{place}
+			textarea(type="text"+ inpType name=""+ impName  placeholder=""+ defaultPlace)
+	

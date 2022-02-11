@@ -8,16 +8,10 @@
 			.modal-frame__text
 				.title-24.text-left Напишите нам
 				form(action="")
-					.form-item
-						span.fake-placeholder Моб. телефон
-						input(type="text" name=""  placeholder="+7 (——— ) ——— - —— - ——")
-					.form-item
-						span.fake-placeholder E-mail
-						input(type="text" name=""  placeholder="@")
-					.form-item
-						span.fake-placeholder Сообщение
-						textarea(type="text" name=""  placeholder="Введите ваше сообщение")
-
+					+form-item('text', 'Моб. телефон', 'phone', '+7 (——— ) ——— - —— - ——')
+					+form-item('text', ' E-mail', ' email', '@')
+					+form-item('text', 'Сообщение', 'message', 'Введите ваше сообщение',  'textarea')
+					
 		.modal-frame__footer.modal-frame__footer--abs
 			.container-slim
 				+button-flex('button', '', 'button--reverse button--blue', 'Продолжить',  'chevron', 'Chevron')
