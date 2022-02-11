@@ -11,12 +11,12 @@
 			.modal-frame__text
 				.title-20 Укажите телефон для входа
 				form
-					.form
+					+form-item('text', 'Моб. телефон', 'phone', '+7 (——— ) ——— - —— - ——')
 
 	.modal-frame__footer
 		.container-slim
-			+button('button', '', 'Да, всё верно', 'button--blue')
-			+button('button', '', 'Нет, вы ошиблись', 'button--white')
+			+button-flex('button', '', 'button--reverse button--blue', 'Продолжить',  'chevron', 'Chevron')
+			
 	
 	.login-social
 		.text-14 Вход через месенджер
