@@ -45,7 +45,7 @@ mixin legend-item(text, addClass)
 	
 //- карточка экспресс-данные
 mixin express-card(title, svgcl, svgid, cl)
-	.express-card(class=""+ cl)
+	.express-card(class=(cl ? " "+ cl : ""))
 		.express-card__left
 			svg(class=""+ svgcl)
 				use(xlink:href="../img/svg-sprite.svg#"+svgid)

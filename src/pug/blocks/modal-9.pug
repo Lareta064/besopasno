@@ -1,0 +1,19 @@
+.modal-frame(frame-modal="enter-seller-data")
+	.modal-close.btn-close(frame-close)
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+		
+	.modal-frame-content
+		.container-slim
+			.modal-frame__text
+				.title-24.text-left Укажите информацию о владельце
+				form(action="")
+					+form-item('text', 'Серия и номер паспорта', 'phone', '45 05 445899')
+					+form-item('date', 'Дата рождения')
+					
+		.modal-frame__footer.modal-frame__footer--abs
+			.container-slim
+				.button-group-2
+					+double-button('Оплатить', '300 &#8381;','button--blue')
+					.button-group__bottom
+						a(href="p-115.html").title-14.text-blue Нет данных о владельце?

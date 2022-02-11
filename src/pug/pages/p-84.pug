@@ -36,7 +36,7 @@ block content
 										+list-types('marker-lock', 'Суды', 'Арбитраж',' Банкродство','Налоги','Дисквалификация','Организации','Терроризм','Суды')
 									.right-modal__footer
 										.button-group-2
-											+double-button('Проверить', '300 &#8381;','button--blue')
+											+double-button('Проверить', '300 &#8381;','button--blue')(frame-btn="enter-seller-data")
 											.button-group__bottom
 												a(href="p-115.html").title-14.text-blue Нет данных о владельце?
 
@@ -58,6 +58,7 @@ block content
 	
 	//========== footer ==========
 	include ../sections/_footer
+	include ../blocks/modal-9
 	
 block variables
 	-var title = "Проверить объект | главная";
