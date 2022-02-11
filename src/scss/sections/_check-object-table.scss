@@ -1,5 +1,12 @@
 .check-object-table {
-
+	position: relative;
+	
+	.person-label{
+		position: absolute;
+		z-index: 3;
+		top: 20px;
+		left: 20px;
+	}
 }
 .table-flag {
 	min-width: 80px;

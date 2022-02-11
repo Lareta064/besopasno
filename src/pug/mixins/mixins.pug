@@ -20,13 +20,13 @@ mixin text-card(title, text)
 //-лейбл в таблице объекта
 mixin persone-label(personeName="Петров А.И.", addClass)
 	if addClass
-		.person-label(class=" person-label--"+ addClass)
+		.person-label(class=" person-label--"+ addClass)&attributes(attributes)
 			span #{personeName}
 			.info-icon
 				svg.svg-info
 					use(xlink:href="../img/svg-sprite.svg#svgInfo")
 	else
-		.person-label
+		.person-label&attributes(attributes)
 			span #{personeName}
 			.info-icon
 				svg.svg-info

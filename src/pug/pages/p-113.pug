@@ -30,6 +30,7 @@ block content
 					.check-object-block
 						.check-object-table
 							img(src="./img/table.jpg", alt="")
+							+persone-label("Петров А.И.", 'green')(frame-btn="table-object")
 					//====текстовая карточка =======
 					.check-object-block
 						+text-card('ФИНАНСОВАЯ ГАРАНТИЯ СДЕЛКИ', 'Мы дадим финансовую гарантию безопасности сделки на всю сумму договора покупки')
@@ -51,6 +52,7 @@ block content
 			+double-button('Оформить', '19 9999 &#8381;')
 	//========== footer ==========
 	include ../sections/_footer
+	include ../blocks/modal-12
 	
 block variables
 	-var title = "Проверить объект | главная";
