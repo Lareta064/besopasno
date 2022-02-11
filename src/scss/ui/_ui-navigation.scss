@@ -37,6 +37,10 @@
 .body-dashboard{
 	padding-left: 320px;
 	padding-top: 50px;
+	.modal-frame{
+		transform: translate(0)!important;
+		position: relative !important;
+	}
 	.container-dashboard{
 		width: 93%;
 		margin-left: auto;

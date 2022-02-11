@@ -12,7 +12,7 @@
 }
 
 .social-block {
-	width: 100%;
+	// width: 100%;
 	display: flex;
 	align-items: center;
 	// justify-content: space-between;
@@ -40,5 +40,18 @@
 				margin-left: 13px;
 			}
 		}
+	}
+}
+.login-social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.text-14 {
+		color: #B5B5B5;
+		font-family: $rm;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.1px;
+		padding-bottom: 8px;
 	}
 }

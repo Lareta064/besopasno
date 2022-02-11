@@ -32,6 +32,12 @@
 			}
 		}
 	}
+	&-content{
+		.title-2{
+			color: $base;
+			text-align: center;
+		}
+	}
 	&__text{
 		padding-top: 32px;
 		padding-bottom: 24px;
@@ -96,6 +102,7 @@
 			right: 16px;
 		}
 	}
+	
 	.button + .button{
 		margin-top: 16px;
 	}
@@ -103,7 +110,25 @@
 		transform: translateX(0);
 	}
 }
+.modal-frame--user{
+	.modal-frame__text {
+		padding-top: 8px;
+		padding-bottom: 0;
+	
+	.title-24{
+		font-family: $rm; 
+		color: $darkBlue;
+		padding-bottom: 32px;
+		border-bottom: 1px solid rgba(30, 65, 89, .24);
+		margin-top: 4px;
+	}
+	.text-14{
+		color: rgba(30, 65, 89, .72);
+		margin-bottom: 8px;
+	}
+}
 
+}
 .modal-close{
 	position: absolute;
 	width: 40px;
