@@ -23,6 +23,23 @@ html(lang="ru")
 
 				.container-dashboard__content
 					.block(style="margin-top:20px;")
+						+checkbox-item('attach-vk')
+						pre.
+							+checkbox-item('attach-vk')
+					
+					.block(style="margin-top:20px;")
+						+attach-item('icon-vk', 'Вконтакте', 'attach_vk')
+						+attach-item('icon-wa', 'Whatsapp', 'attach_wa')
+						+attach-item('icon-mess', 'Facebook Messenger', 'attach_mess')
+						+attach-item('icon-tg', 'Telegram', 'attach_tg')
+						pre.
+							+attach-item('icon-vk', 'Вконтакте', 'attach_vk')
+							+attach-item('icon-wa', 'Whatsapp', 'attach_wa')
+							+attach-item('icon-mess', 'Facebook Messenger', 'attach_mess')
+							+attach-item('icon-tg', 'Telegram', 'attach_tg')
+						
+						
+					.block(style="margin-top:20px;")
 						form(action="" method="method")
 							.search-field
 								.search-field__decor

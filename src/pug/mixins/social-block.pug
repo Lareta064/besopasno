@@ -1,5 +1,7 @@
+mixin social-item(link="#", itemCl)
+	a(href=""+ link class="soc-icon "+ itemCl)
+
 mixin social-block(...items)
 	.social-block
 		each item in items
-			a(href=""+ item.link)
-				span(class=""+ item.socClass )
+			a(class="soc-icon "+ item.socClass  href=""+ item.link)

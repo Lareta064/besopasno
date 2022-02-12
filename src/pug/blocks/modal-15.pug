@@ -1,0 +1,23 @@
+.modal-frame(frame-modal="enter-seller-data")
+	.modal-close.btn-close(frame-close)
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+		
+	.modal-frame-content
+		.container-slim
+			.modal-frame__text
+				.title-24.text-left Подключите месенджеры
+			.modal-frame__form
+				+menu-person-info('avatar', 'Дмитрий Лукьян', '+7 (123) 456-78-90', 'flex', 'editIcon')
+			
+				form(action="")
+					.title-14.text-upper Подключите месенджеры
+					+attach-item('icon-vk', 'Вконтакте', 'attach_vk')
+					+attach-item('icon-wa', 'Whatsapp', 'attach_wa')
+					+attach-item('icon-mess', 'Facebook Messenger', 'attach_mess')
+					+attach-item('icon-tg', 'Telegram', 'attach_tg')
+					
+					
+		.modal-frame__footer.modal-frame__footer--abs
+			.container-slim
+				+button-flex('button', '', 'button--reverse button--blue', 'Готово',  'chevron', 'Chevron')

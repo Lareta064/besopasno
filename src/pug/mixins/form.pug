@@ -12,4 +12,19 @@ mixin form-item(inpType = 'text', place, impName='', defaultPlace,  tagTextarea)
 		.form-item
 			span.fake-placeholder #{place}
 			textarea(type="text"+ inpType name=""+ impName  placeholder=""+ defaultPlace)
+
+//- кастомный чекбокс
+mixin checkbox-item(inpName)
+	.checkbox-item&attributes(attributes)
+		label
+			input(type="checkbox" name=""+inpName )
+			span
+
+//- ----Подключите месенджеры---
+mixin attach-item(iconClass, itemText, checkboxName)
+	.attach-item
+		.attach-item__type
+			span(class="soc-icon "+ iconClass)
+			.text-16 #{itemText}
+		+checkbox-item(''+ checkboxName)
 	
