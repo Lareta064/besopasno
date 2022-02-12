@@ -55,3 +55,35 @@
 	-ms-transform: translateX(0);
 	transform: translateX(0);
 }
+.person-block {
+	.title-20,
+	.body-2 {
+		color: #1E4159;
+	}
+
+	&__img {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		border: 2px solid #3F5867;
+		overflow: hidden;
+		margin-bottom: 8px;
+	}
+
+}
+.person-block--flex {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	.person-block__img,
+	.person-block__icon {
+		flex-shrink: 0;
+
+	}
+
+	.person-block__text {
+		padding-left: 16px;
+		padding-right: 16px;
+		flex-grow: 2;
+	}
+}

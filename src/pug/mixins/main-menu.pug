@@ -1,9 +1,13 @@
-mixin menu-person-info(avaSrc, nameText, bottomText)
-	.person-block
-		.person-block__top
+mixin menu-person-info(avaSrc, nameText, bottomText,addClass, editIcon)
+	.person-block(class=(addClass ==='flex' ? " person-block--flex" : ""))
+		.person-block__img
 			img(src="../img/"+avaSrc +".jpg", width="48" height="48" alt="alt")
-		.person-block__center.title-20 !{nameText}
-		.person-block__bottom.body-2 !{bottomText}
+		.person-block__text
+			.person-block__center.title-20 !{nameText}
+			.person-block__bottom.body-2 !{bottomText}
+		if editIcon
+			.person-block__right
+				.icon-edit
 
 //- строка главного меню
 mixin menuItem(text, link, addClass, svgClass, svgId )
