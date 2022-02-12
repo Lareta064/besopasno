@@ -6,41 +6,7 @@
 	padding-left: 16px;
 	border-left: 2px solid $green;
 }
-.employee-card{
-	display: inline-block;
-	background: #FFFFFF;
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
-	0px 4px 8px rgba(0, 0, 0, 0.02),
-	0px 1px 12px rgba(0, 0, 0, 0.12);
-	border-radius: 4px;
-	&__img{
-		height: 176px;
-		overflow: hidden;
-		img{
-			width: 296px;
-			height: 176px;
-			object-fit: cover;
-			object-position: top;
-		}
-	}
-	&__text{
-		padding: 16px;
-		padding-top: 8px;
-		p{
-			line-height: 24px;
-			letter-spacing: 0.44px;
-			color: #1E4159;
-			font-size: 16px;
-		}
-		span{
-			font-size: 12px;
-			line-height: 16px;
-			letter-spacing: 0.2px;
-			color: rgba(30,65,89, .54);
 
-		}
-	}
-}
 .video {
 	border-radius: 4px;
 	overflow: hidden;

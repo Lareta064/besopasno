@@ -1,0 +1,63 @@
+.employee{
+	overflow:hidden;
+}
+.employee-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(296px, 296px));
+	row-gap: 16px;
+	column-gap:16px;
+	
+		@media(max-width: 1023px){
+			grid-auto-flow: column;
+			overflow: hidden;
+			overflow-x: auto;
+			width: calc(50% + 50vw);
+			scrollbar-width: none;
+			padding-bottom: 16px;
+			&::-webkit-scrollbar{
+				display: none;
+				width: 0;
+			}
+		}
+	
+}
+.employee-card {
+	display: inline-block;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+		0px 4px 8px rgba(0, 0, 0, 0.02),
+		0px 1px 12px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	width: 296px;	
+	&__img {
+		height: 176px;
+		overflow: hidden;
+
+		img {
+			width: 296px;
+			height: 176px;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+
+	&__text {
+		padding: 16px;
+		padding-top: 8px;
+
+		p {
+			line-height: 24px;
+			letter-spacing: 0.44px;
+			color: #1E4159;
+			font-size: 16px;
+		}
+
+		span {
+			font-size: 12px;
+			line-height: 16px;
+			letter-spacing: 0.2px;
+			color: rgba(30, 65, 89, .54);
+
+		}
+	}
+}
