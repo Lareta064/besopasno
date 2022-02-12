@@ -26,6 +26,21 @@
 	.title-20{
 		font-size: 16px;
 		font-family: $rr;
+		white-space: nowrap;
+	}
+}
+.button.fz-14 {
+	.title-20 {
+		font-size: 14px;
+		font-family: $rr;
+		white-space: nowrap;
+	}
+}
+.button.fz-12 {
+	.title-20 {
+		font-size: 12px;
+		font-family: $rr;
+		white-space: nowrap;
 	}
 }
 .button--blue{

@@ -59,3 +59,32 @@ mixin express-card(title, svgcl, svgid, cl)
 			span 2
 			svg.svg-chevron
 				use(xlink:href="../img/svg-sprite.svg#svgChevron")
+
+//- стр О ресурсе
+mixin border-text(text)
+	.border-text
+		p !{text}
+//- карточка сотрудника
+mixin employee-card(imgSrc, name, rang)
+	.employee-card
+		.employee-card__img
+			img(src="../img/"+ imgSrc+".jpg", width="296" alt="alt")
+		.employee-card__text
+			p !{name}
+			span !{rang}
+
+//- карточка преимущества
+mixin benefit-card(topText, title, desk)
+	.benefit-card
+		.benefit-card__top
+			.text-12 #{topText}
+		.benefit-card__desk
+			.text-16  #{title}
+			.text-12  #{desk}
+mixin timeline-item(num, title, text)
+	.timeline-item
+		.timeline-item__top
+			span #{num}
+			.text-16 #{title}
+		.timeline-item__text
+			p !{text}

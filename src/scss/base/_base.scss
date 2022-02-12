@@ -154,6 +154,18 @@ input[type="submit"] {
 		padding-top: 24px;
 	}
 }
+.wrapper-visible-1023{
+	display: none;
+	@media(max-width:1023px){
+		display: block;
+	}
+}
+.wrapper-hide-1023{
+	display: block;
+	@media(max-width:1023px){
+		display: none;
+	}
+}
 .body-flex {
 	display: flex;
 	flex-direction: column;

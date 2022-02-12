@@ -1,0 +1,17 @@
+mixin accordeon(title, ...items)
+	.accor
+		if title!==''
+			.text-14.text-upper #{title}
+		
+		.accor-container
+			each item in items
+				.acor-container-block
+					input(id=""+item.id type='checkbox' name=''+ item.groupName )
+					label(for=''+ item.id)
+						.acor-header.text-16 #{item.head}
+						.chevron-down
+							svg.svg-chevron
+								use(xlink:href="../img/svg-sprite.svg#svgChevron")
+					.acor-body.text-14
+						each text in item.texts
+							p !{text}

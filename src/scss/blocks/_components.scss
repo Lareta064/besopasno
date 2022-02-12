@@ -225,6 +225,7 @@
 	}
 
 	max-width: 296px;
+	@media(max-width:1023px){max-width: 344px;}
 }
 .legend-item{
 	font-size: .75rem;

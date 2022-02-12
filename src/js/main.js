@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function (){
 					const frameAttr =frame.getAttribute('frame-modal');	
 					if(frameAttr == itemAttr){
 						frame.classList.add('visible');
+						bodyEl.classList.add('noscroll');
 					}
 				}
 			});
@@ -134,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function (){
 			item.addEventListener('click', function(e){
 				e.preventDefault();
 				item.closest('[frame-modal]').classList.remove('visible');
+				bodyEl.classList.remove('noscroll');
 			});
 		}
 	}
@@ -168,4 +170,28 @@ document.addEventListener("DOMContentLoaded", function (){
 		speed:800
       });
 	  
+
+	  /**/
+	  /*============video clip play ===========*/
+	const videoContent = document.querySelectorAll('.video');
+	if (videoContent) {
+		for(let item of videoContent){
+
+			const videoBtn = item.querySelector('.video-play-btn');
+			const videoClip = item.querySelector('.video-frame');
+			
+			item.addEventListener('click', function (e) {
+				
+				if (videoClip.paused) {
+					videoClip.play();
+					videoBtn.style.opacity = "0";
+					this.classList.add("active");
+				} else {
+					videoClip.pause();
+					videoBtn.style.opacity = "1";
+					this.classList.remove("active");
+				} 
+			}); 
+		} 
+	}
 });

@@ -123,6 +123,11 @@
 	justify-content: center;
 	align-items: center;
 }
+.chevron-down{
+	svg{
+		transform: rotate(90deg);
+	}
+}
 .svg-stop{
 	width: 68px;
 	height: 69px;
