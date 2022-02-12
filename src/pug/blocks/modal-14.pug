@@ -1,0 +1,23 @@
+.modal-frame(frame-modal="enter-seller-data")
+	.modal-close.btn-close(frame-close)
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+		
+	.modal-frame-content
+		.container-slim
+			.modal-frame__text
+				.title-24.text-left Заполнить профиль
+			.modal-frame__form
+				+menu-person-info('avatar', 'Дмитрий Лукьян', '+7 (123) 456-78-90', 'flex', 'editIcon')
+			
+				form(action="")
+					.title-14.text-upper Заполните личные данные
+					+form-item('text', 'Имя', 'name', 'Введите имя')
+					+form-item('text', 'Фамилия','lastName', 'Укажите фамилию')
+					
+		.modal-frame__footer.modal-frame__footer--abs
+			.container-slim
+				.button-group-2
+					+button-flex('button', '', 'button--reverse button--blue', 'Продолжить',  'chevron', 'Chevron')
+					.button-group__bottom
+						a(href="№!").title-14.text-blue Указать данные позже
