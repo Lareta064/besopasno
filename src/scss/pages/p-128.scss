@@ -1,0 +1,23 @@
+.faq-header{
+		@media(max-width:767px){
+		.page-header-title{display: block; margin-bottom: 0px;}
+		.page-header{
+		height: auto;
+		padding-top: 40px;
+		padding-bottom: 48px;
+
+		}
+	}
+}
+.faq-content{
+	padding-top: 24px;
+	padding-bottom: 88px;
+	.accor +.accor{margin-top: 48px;}
+	@media(max-width:767px){
+		padding-top: 16px;
+		padding-bottom: 48px;
+		.accor+.accor {
+			margin-top: 32px;
+		}
+	}
+}

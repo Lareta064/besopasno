@@ -1,5 +1,5 @@
 mixin breadcrumbs(...items)
-	.breadcrumb-block
+	.breadcrumb-block&attributes(attributes)
 		a(href="index.html").breadcrumb-block__item
 			span.icon-home
 		each item in items

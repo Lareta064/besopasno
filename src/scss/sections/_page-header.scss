@@ -20,6 +20,7 @@
 		 background: #76A5C3;
 	}
 	&--blue, &--img {
+		padding-top: 48px;
 		.title-24,
 		.title-2 {
 			color: #fff;
@@ -28,7 +29,6 @@
 	}
 }
 .page-header {
-	padding-top: 3rem;
 	overflow: hidden;
 	// min-height: 100%;
 
@@ -59,7 +59,9 @@
 		width: 60%;
 		max-width: 44.5rem;
 	}
-
+	form{
+		max-width: 712px;
+	}
 	@media(max-width:1279px) {
 		&__right {
 

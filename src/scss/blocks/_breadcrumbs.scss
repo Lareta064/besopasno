@@ -32,10 +32,15 @@
 		width: 32px;
 		height: 32px;
 		display: flex;
+		border-radius: 5px;
 		justify-content: center;
 		align-items: center;
 		box-sizing: content-box;
-
+		padding-right: 0;
+		margin-right: 16px;
+		&:before {
+			right: -20px;
+		}
 		span {
 			width: 19px;
 			height: 16px;
@@ -61,5 +66,20 @@
 	}
 	@media(max-width:767px) {
 		display: none;
+	}
+}
+.breadcrumb-block--white{
+	a,
+	p {
+		color: #f0f0f0;
+	&:before {
+		
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 1.25152L1.21337 0L8 7L1.21337 14L0 12.7485L5.57326 7L0 1.25152Z' fill='%23F0F0F0'/%3e%3c/svg%3e");
+		
+	}
+	}
+	a:first-child{
+		background: linear-gradient(180deg, #F7F7F7 0%, #F0F0F0 100%);
+		
 	}
 }

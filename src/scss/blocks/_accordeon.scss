@@ -1,13 +1,14 @@
 .accor{
-	.text-upper
-	{margin-bottom: 28px;
+	.text-upper	{
+		margin-bottom: 24px;
 		font-family: $rm;
 		color: $dark;
+		@media(max-width:767px) {margin-bottom: 16px;}
 	}
 }
 .acor-container {
 	&-block {
-		border-radius: 5px;
+		border-radius: 2px;
 		background-color: #fff;
 		position: relative;
 		border: 1px solid rgba(30, 65, 89, .24);
@@ -34,7 +35,7 @@
 			align-items: center;
 			justify-content: space-between;
 			cursor: pointer;
-
+			.svg-chevron{height: 12px;}
 			.text-16 {
 				color: $darkBlue;
 			}

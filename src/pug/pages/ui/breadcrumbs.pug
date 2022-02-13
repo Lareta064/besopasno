@@ -33,3 +33,15 @@ html(lang="ru")
 					{link: "#", text: 'Список заказов'},
 					{link: "#", text: 'Проверка продавца'},
 					)
+				.container-dashboard__content(style="background:  darkblue")
+					+breadcrumbs(
+						{link: "#", text: 'Профиль'},
+						{link: "#", text: 'Список заказов'},
+						{link: "#", text: 'Проверка продавца'},
+						)(class="breadcrumb-block--white")
+				pre.
+					+ breadcrumbs(
+					{link: "#", text: 'Профиль'},
+					{link: "#", text: 'Список заказов'},
+					{link: "#", text: 'Проверка продавца'},
+					)
