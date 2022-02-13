@@ -1,5 +1,9 @@
 .benefits{
-	overflow:hidden;
+	
+	@media(max-width:1199px){
+		overflow:hidden;
+		padding-top: 24px;
+	}
 }
 .benefits-content{
 
@@ -8,12 +12,16 @@
 	row-gap: 16px;
 	column-gap:16px;
 	padding-bottom: 16px;
-	@media(max-width: 1023px) {
+	@media(max-width: 1439px) {
+	grid-template-columns: repeat(auto-fill, minmax(360px, 379px));
+	}
+	@media(max-width: 1199px) {
 		grid-auto-flow: column;
 		overflow: hidden;
 		overflow-x: auto;
 		width: calc(50% + 50vw);
 		scrollbar-width: none;
+		padding-left: 8px;
 		
 
 		&::-webkit-scrollbar {

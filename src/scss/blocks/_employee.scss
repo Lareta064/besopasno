@@ -1,5 +1,8 @@
 .employee{
-	overflow:hidden;
+	@media(max-width:1023px) {
+		overflow: hidden;
+	}
+	
 }
 .employee-content {
 	display: grid;

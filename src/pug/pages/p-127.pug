@@ -9,21 +9,58 @@ block content
 	.about-header
 		.page-header
 			.container
+				+breadcrumbs(
+				{link: "#", text: 'Профиль'},
+				{link: "#", text: 'Список заказов'},
+				{link: "#", text: 'Проверка продавца'},
+				)
 				.page-header-title
-					.title-2 Исключаем риски<br>при покупке недвижимости
-				//- form(action="" method="method")
-				//- 	.search-field
-				//- 		.search-field__decor
-				//- 			img(src="../img/decor.png", width="18" alt="alt")
-				//- 		.form-item
-				//- 			input(type="text" placeholder="Проверим объект?")
-				//- 		button.search-field__btn(type="submit")
-				//- 			svg.svg-search
-				//- 				use(xlink:href="../img/svg-sprite.svg#svgSearch")
+					.title-2 О сервисе
+				
 	.about-content
-		
+		.container
+			.about-offer
+				.about-offer__left
+					.about-offer__title.pb-24
+						.title-24 Мы проверим!
 					
-	
+					+border-text('Начиная с 2002 года ведущие специалисты Компании успешно трудятся в сфере юридической безопасности сделок с недвижимостью: от Астрахани до Санкт-Петербурга, от Калининграда до Иркутска, от Москвы до Московской области.')
+
+				.about-offer__right
+					.video
+						.video-play-btn
+						video.video-frame( poster="../img/team1.jpg" width="100%")
+							source(src="../video/video.ogv", type="video/ogg;")
+							source(src="../video/video.mp4", type="video/mp4")
+							source(src="../video/video.webm", type="video/webm")
+			.employee.pt-48
+				.employee-title.pb-24
+					.title-14.text-upper Первые лица компании
+				.employee-content
+					+employee-card('team2', 'Александр Чернов', 'Юридический сектор')
+				
+					+employee-card('team1', 'Анастасия Чернова', 'Юридический сектор')
+				
+					+employee-card('team2', 'Александр Чернов', 'Юридический сектор')
+				
+					+employee-card('team1', 'Анастасия Чернова', 'Юридический сектор')
+				
+					+employee-card('team2', 'Александр Чернов', 'Юридический сектор')
+			
+					+employee-card('team1', 'Анастасия Чернова', 'Юридический сектор')
+					
+			//========= map =========
+			.about-map.pt-48
+				.about-map-title.pb-24
+					.title-14.text-upper Множество филиалов в различных городах
+				.map-wrapper
+					iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa92044f04c8f994c85198b962eae72bb72482a55a5940902eca8e59a55ef917f&source=constructor' width='100%' height='100%' frameborder='0')
+
+
+			.about-info.pt-48
+				include ../blocks/timeline
+				include ../blocks/benefits
+
 	//========== footer ==========
 	include ../sections/_footer
 	

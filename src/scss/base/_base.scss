@@ -154,6 +154,13 @@ input[type="submit"] {
 		padding-top: 24px;
 	}
 }
+.pt-48 {
+	padding-top: 48px;
+
+	@media(max-width:767px) {
+		padding-top: 40px;
+	}
+}
 .wrapper-visible-1023{
 	display: none;
 	@media(max-width:1023px){

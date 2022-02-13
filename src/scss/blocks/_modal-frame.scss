@@ -11,14 +11,14 @@
 	top: 0;
 	right: 0;
 	z-index: 10;
-	transform:translateX(110%);
+	transform:translateX(150%);
 	transition: .5s;
 	display: flex;
 	flex-direction: column;
 	&--left{
 		right: auto;
 		left:0;
-		transform:translateX(-110%);
+		transform:translateX(-150%);
 	}
 	.text-left {
 		text-align: left;
