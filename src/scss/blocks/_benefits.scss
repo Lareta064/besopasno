@@ -1,0 +1,54 @@
+.benefits{
+	overflow:hidden;
+}
+.benefits-content{
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+	row-gap: 16px;
+	column-gap:16px;
+	padding-bottom: 16px;
+	@media(max-width: 1023px) {
+		grid-auto-flow: column;
+		overflow: hidden;
+		overflow-x: auto;
+		width: calc(50% + 50vw);
+		scrollbar-width: none;
+		
+
+		&::-webkit-scrollbar {
+			display: none;
+			width: 0;
+		}
+	}
+}
+
+.benefit-card {
+	background: #FFFFFF;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+		0px 4px 8px rgba(0, 0, 0, 0.02),
+		0px 1px 12px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	padding: 16px;
+	min-height: 144px;
+	max-width: 400px;
+	min-width: 320px;
+	&__top {
+		padding-bottom: 4px;
+
+		.text-12 {
+			color: #3F5867;
+		}
+	}
+
+	&__desk {
+		.text-16 {
+			color: #1E4159;
+			padding-bottom: 4px;
+		}
+
+		.text-12 {
+			color: rgba(51, 51, 51, .54);
+		}
+	}
+}

@@ -1,0 +1,34 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	//========gamburger-menu=========
+	include ../sections/_main-menu
+	//========top-menu=========
+	+header('О сервисе','inner','#!')(class="page-header--inner page-header--light")
+	.about-header
+		.page-header
+			.container
+				.page-header-title
+					.title-2 Исключаем риски<br>при покупке недвижимости
+				//- form(action="" method="method")
+				//- 	.search-field
+				//- 		.search-field__decor
+				//- 			img(src="../img/decor.png", width="18" alt="alt")
+				//- 		.form-item
+				//- 			input(type="text" placeholder="Проверим объект?")
+				//- 		button.search-field__btn(type="submit")
+				//- 			svg.svg-search
+				//- 				use(xlink:href="../img/svg-sprite.svg#svgSearch")
+	.about-content
+		
+					
+	
+	//========== footer ==========
+	include ../sections/_footer
+	
+	
+	
+block variables
+	-var title = "Проверить объект | главная";
+	- var bodyCl = "about"

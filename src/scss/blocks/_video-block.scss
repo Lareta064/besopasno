@@ -1,0 +1,34 @@
+.video {
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	width: 464px;
+
+}
+
+.video-play-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+
+	background-color: rgba(139, 173, 195, .5);
+	cursor: pointer;
+
+	// pointer-events: none;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 55%;
+		transform: translate(-50%, -50%);
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='31' height='47' viewBox='0 0 31 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 23.5V0L31 23.5L0 47V23.5Z' fill='%23333333'/%3e%3c/svg%3e ");
+		background-repeat: no-repeat;
+		width: 31px;
+		height: 47px;
+	}
+}

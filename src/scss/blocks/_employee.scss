@@ -6,14 +6,14 @@
 	grid-template-columns: repeat(auto-fill, minmax(296px, 296px));
 	row-gap: 16px;
 	column-gap:16px;
-	
+	padding-bottom: 16px;
 		@media(max-width: 1023px){
 			grid-auto-flow: column;
 			overflow: hidden;
 			overflow-x: auto;
 			width: calc(50% + 50vw);
 			scrollbar-width: none;
-			padding-bottom: 16px;
+			
 			&::-webkit-scrollbar{
 				display: none;
 				width: 0;
