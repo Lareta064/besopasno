@@ -1,0 +1,135 @@
+//========== Модалка-поиск региона ============
+.search-region.modal-frame.modal-frame--left(frame-modal="search-region")
+	.modal-close.btn-close(frame-close)
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+	.search-region-content
+		.search-region__form
+			form(action="" method="method")
+				.search-field
+					.search-field__decor(frame-btn="search-region")
+						img(src="../img/decor.png", width="18" alt="alt")
+					.form-item
+						input(type="text" placeholder="Проверим объект?")
+					button.search-field__btn(type="submit")
+						svg.svg-search
+							use(xlink:href="../img/svg-sprite.svg#svgSearch")
+		.search-region__tabs
+			.custom-tabs(custom-tabs)
+				.custom-tabs__btns
+					.custom-tabs__btn-block
+						.custom-tabs__letter
+						.custom-tabs__region
+							p(ct-btn="allCity") Все города
+							p(ct-btn="Москва") Москва и МО
+							p(ct-btn="Санкт-Петербург") Санкт-Петербург и ЛО
+					.custom-tabs__btn-block
+						.custom-tabs__letter
+							p A
+						.custom-tabs__region
+							p(ct-btn="Алтай").custom-tab--current Алтай
+							p(ct-btn="Астрахань") Астрахань
+					.custom-tabs__btn-block
+						.custom-tabs__letter
+							p Б
+						.custom-tabs__region
+							p(ct-btn="") Белгородская область
+							p(ct-btn="") Брянская область
+					.custom-tabs__btn-block
+						.custom-tabs__letter
+							p В
+						.custom-tabs__region
+							p(ct-btn="") Владимирская область
+							p(ct-btn="") Волгоградская область
+							p(ct-btn="") Воронежская область
+					.custom-tabs__btn-block
+						.custom-tabs__letter
+							p З
+						.custom-tabs__region
+							p(ct-btn="") Забайкальский край
+							p(ct-btn="") Забайкальский край
+							p(ct-btn="") Забайкальский край
+				.custom-tabs__content
+					p Города области:
+					.custom-tabs__content-block.ct-content--active(ct-content="Москва")
+						p 
+							span
+								img(src="../img/city1.png", width="32" alt="img")
+							span Алейск 
+						p
+							span
+								img(src="../img/city2.png", width="32" alt="img")
+							span Барнаул 
+						p
+							span
+								img(src="../img/city3.png", width="32" alt="img")
+							span Белокуриха
+						p
+							span
+								img(src="../img/city4.png", width="32" alt="img")
+							span Бийск
+						p
+							span
+								img(src="../img/city5.png", width="32" alt="img")
+							span Горняк
+						p 
+							span
+								img(src="../img/city6.png", width="32" alt="img")
+							span Заринск
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Змеиногорск
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Камень-на-Оби
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Новоалтайск
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Рубцовск
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Славгород
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Яровое
+					.custom-tabs__content-block(ct-content="Алтай")
+						p 
+							span
+								img(src="../img/city1.png", width="32" alt="img")
+							span Алейск 
+						p
+							span
+								img(src="../img/city2.png", width="32" alt="img")
+							span Барнаул 
+						p
+							span
+								img(src="../img/city3.png", width="32" alt="img")
+							span Белокуриха
+						p
+							span
+								img(src="../img/city4.png", width="32" alt="img")
+							span Бийск
+						p
+							span
+								img(src="../img/city5.png", width="32" alt="img")
+							span Горняк
+						p 
+							span
+								img(src="../img/city6.png", width="32" alt="img")
+							span Заринск
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Змеиногорск
+						p
+							span
+								img(src="../img/city7.png", width="32" alt="img")
+							span Камень-на-Оби

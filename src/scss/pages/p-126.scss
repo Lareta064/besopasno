@@ -1,0 +1,18 @@
+.partners-header{
+	.page-header-title{display: block;}
+	.page-header{padding-top: 40px;}
+} 
+.partners-content{
+	padding-top: 24px;
+	padding-bottom: 56px;
+	.partners-content__list{
+		li +li {margin-top: 24px;}
+	}
+	
+	@media(min-width: 1200px){
+		min-height: 400px;
+	}
+		@media(min-width: 1440px) {
+			min-height: 470px;
+		}
+}

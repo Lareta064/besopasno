@@ -74,15 +74,7 @@ document.addEventListener("DOMContentLoaded", function (){
 			});
 		}
 	}
-	/*=======// ===== - Скрипт #3 -  ====== ТАБЫ========== */
-	// $('.tabs-wrapper').each(function() {
-	// 	let ths = $(this);
-	// 	ths.find('.tab-item').not(':first').hide();
-	// 	ths.find('.tab').click(function() {
-	// 		ths.find('.tab').removeClass('active').eq($(this).index()).addClass('active');
-	// 		ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
-	// 	}).eq(0).addClass('active');
-	// });
+
 
 	/* по клику на карточку адреса показать окно modal-reestr p-121.html*/
 	const addressItems = document.querySelectorAll('[data-address]');
@@ -114,8 +106,10 @@ document.addEventListener("DOMContentLoaded", function (){
 
 	/* ==============показать модальные окна, типа ввести данные об объекте, авторизации такие модальные окна имеют атрибут frame-modal , кнопка, которая его показывает , имеет атрибут frame-btn, Чтобы закрыть такое окно, прописываем кнопке закрытия атрибут frame-close*/
 	const modalFramesOpen = document.querySelectorAll('[frame-btn]');
-	if( modalFramesOpen.length > 0){
-		const modalFrames = document.querySelectorAll('[frame-modal]');
+	const modalFrames = document.querySelectorAll('[frame-modal]');
+	console.log(modalFrames);
+	if( modalFrames.length > 0){
+		
 		const modalFramesClose = document.querySelectorAll('[frame-close]');
 		for(let item of modalFramesOpen){
 			item.addEventListener('click', function(e){
@@ -133,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function (){
 		/*закрыть модалки с атрибутом frame-modal*/
 		for(let item of modalFramesClose){
 			item.addEventListener('click', function(e){
+				
 				e.preventDefault();
 				item.closest('[frame-modal]').classList.remove('visible');
 				bodyEl.classList.remove('noscroll');
@@ -171,27 +166,6 @@ document.addEventListener("DOMContentLoaded", function (){
       });
 	  
 
-	  /**/
-	  /*============video clip play ===========*/
-	const videoContent = document.querySelectorAll('.video');
-	if (videoContent) {
-		for(let item of videoContent){
-
-			const videoBtn = item.querySelector('.video-play-btn');
-			const videoClip = item.querySelector('.video-frame');
-			
-			item.addEventListener('click', function (e) {
-				
-				if (videoClip.paused) {
-					videoClip.play();
-					videoBtn.style.opacity = "0";
-					this.classList.add("active");
-				} else {
-					videoClip.pause();
-					videoBtn.style.opacity = "1";
-					this.classList.remove("active");
-				} 
-			}); 
-		} 
-	}
+	
+	
 });

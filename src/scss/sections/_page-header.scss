@@ -19,13 +19,19 @@
 	&--blue{
 		 background: #76A5C3;
 	}
-	&--blue, &--img {
+	&--green {
+		background: $green;
+		
+	}
+	&--green,
+	&--blue,
+	&--img {
 		padding-top: 48px;
 		.title-24,
-		.title-2 {
+		.title-2,.text-12, .text-14, p {
 			color: #fff;
-			
 		}
+		
 	}
 }
 .page-header {

@@ -1,0 +1,38 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	//========gamburger-menu=========
+	include ../sections/_main-menu
+	//========top-menu=========
+	+header('Партнерам','inner','#!')(class="page-header--inner page-header--light")
+	
+	.partners-header
+		.page-header.page-header--img(style="background-image: url(../img/header-bg.jpg);")
+			.container
+				+breadcrumbs(
+					{link: "#", text: 'Профиль'},
+					{link: "#", text: 'Список заказов'},
+					{link: "#", text: 'Проверка продавца'},
+					)(class="breadcrumb-block--white")
+				.page-header-title
+					.title-2 Стать нашим партнёром
+				.page-header__btn
+					+button('a', '#', 'Стать партнёром', 'button--short h-40 text-upper' )
+		
+	.partners-content
+		.container
+			.col-712
+				.partners-content__title.pb-24
+					.title-upper Мы предлагаем юридическим лицам разные направления сотрудничества
+				.partners-content__list
+					+list-types('marker-list marker-list--brown', 'Поставляйте товары или услуги, сдавайте в аренду помещения или распространяйте продукты «Билайн» Бизнес, получая свою комиссию. Выберите, что актуально для вас, — и оставьте заявку, чтобы подробнее узнать об условиях и начать работу. А если у вас появится встречное предложение, будем рады его выслушать.', ' Сотрудничаем с предприятиями любой организационно-правовой формы. Работаем во всех регионах РФ и большинстве стран СНГ. Будьте с нами, где бы вы ни находились.')
+				
+				.partners-content__link.pt-48
+					a(href="#!").text-dark.text-16 Условия сотрудничества
+	
+	//========== footer ==========
+	include ../sections/_footer
+	
+block variables
+	-var title = "Стать партнером";

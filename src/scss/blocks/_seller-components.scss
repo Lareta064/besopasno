@@ -1,0 +1,41 @@
+.chips-warning{
+	color: #333333;
+	background-color: #E5B49D;
+	height: 32px;
+	line-height: 32px;
+	
+	padding-left: 24px;
+	padding-right: 24px;
+	display: inline-flex;
+	border-radius: 3px;
+	align-items: center;
+	justify-content: center;
+	&>*+*{margin-left: 12px;}
+	svg{
+		fill:#333;
+		width: 16px;
+		height: 16px;
+	}
+}
+.seller-info{
+	p{		
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.2px;
+		color: #7C7C7C;
+		span {
+			color:#333333;
+		}
+	}
+}
+.page-header--green{
+p {
+		color: #dedede;
+
+	span {
+		color: #fff;
+	}
+}
+}
+
+

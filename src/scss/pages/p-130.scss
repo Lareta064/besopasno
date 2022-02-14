@@ -1,0 +1,16 @@
+.seller-header{
+	
+	.title-2{margin-bottom: 0;}
+	.flex-header{
+		align-items: flex-end;
+	}
+	.page-header__right{
+		width: fit-content;
+		img{
+			width: 120px;
+			height: 152px;
+			object-fit: contain;
+		}
+	}
+	.page-header-chips{padding-top: 20px;}
+}

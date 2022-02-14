@@ -1,0 +1,79 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Чипс-предупреждение
+				.chips-warning
+					svg.svg-warning
+						use(xlink:href="../img/svg-sprite.svg#svgWarning")
+					.text-12 Высока верроятность однофамильцев
+				pre.
+					.chips-warning
+						svg.svg-warning
+							use(xlink:href="./img/svg-sprite.svg#svgWarning")
+						.text-12 Высока верроятность однофамильцев
+			
+			.container-dashboard
+				h2 шапка страницы
+				.seller-header
+					.page-header
+						.container
+							+breadcrumbs(
+							{link: "#", text: 'Профиль'},
+							{link: "#", text: 'Список заказов'},
+							{link: "#", text: 'Проверка продавца'},
+							)
+							.flex-wrapper
+								.page-header__left
+									.page-header-title
+										.title-2 Иванов Иван Иванович
+									.page-header-text
+										.seller-info
+											p Год рождения: #[span 12.11.1987	]
+											p ИНН: #[span 644005983025]
+											p Регионы проверки:  #[span  23	](Краснодарский край)
+									.page-header-chips
+										.chips-warning
+											svg.svg-warning
+												use(xlink:href="../img/svg-sprite.svg#svgWarning")
+											.text-12 Высока верроятность однофамильцев
+								.page-header__right
+									img(src="../img/nofoto.jpg", width="120" alt="alt")
+				h2 шапка страницы
+				.seller-header
+					.page-header.page-header--green
+						.container
+							+breadcrumbs(
+								{link: "#", text: 'Профиль'},
+								{link: "#", text: 'Список заказов'},
+								{link: "#", text: 'Проверка продавца'},
+								)(class="breadcrumb-block--white")
+							.flex-wrapper
+								.page-header__left
+									.page-header-title
+										.title-2 Иванов Иван Иванович
+									.page-header-text
+										.seller-info
+											p Год рождения: #[span 12.11.1987	]
+											p ИНН: #[span 644005983025]
+											p Регионы проверки:  #[span  23	](Краснодарский край)
+									
+								.page-header__right
+									img(src="../img/seller.jpg", width="120" alt="alt")

@@ -77,6 +77,7 @@
 	
 	color: #7C7C7C;
 }
+.title-upper,
 .text-14,
 .title-14{
 	font-family: $rm;
@@ -94,6 +95,10 @@
 	letter-spacing: 0.15px;
 	color: #121212;
 }
+.title-upper{
+	text-transform: uppercase;
+	color: $base;
+}
 .text-upper{
 	text-transform: uppercase;
 }
@@ -110,6 +115,9 @@
 }
 .text-grey {
 	color: $grey;
+}
+.text-blue{
+	color: #76A5C3;
 }
 .text-dark,
 .text-dark >*{

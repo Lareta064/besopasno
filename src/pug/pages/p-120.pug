@@ -17,7 +17,7 @@ block content
 							.title-2 Исключаем риски<br>при покупке недвижимости
 						form(action="" method="method")
 							.search-field
-								.search-field__decor
+								.search-field__decor(frame-btn="search-region")
 									img(src="./img/decor.png", width="18" alt="alt")
 								.form-item
 									input(type="text" placeholder="Проверим объект?")
@@ -57,5 +57,7 @@ block content
 								.text-16  Укажите иной адрес или исправьте опечатку если допустили ошибку
 							.modal-frame__footer
 								+button('button', '', 'ok', 'button--blue button--short h-40' )(data-close)
+	include ../blocks/search-region
+
 block variables
 	-var title = "Express| Результаты поиска";
