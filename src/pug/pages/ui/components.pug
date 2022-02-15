@@ -23,8 +23,37 @@ html(lang="ru")
 
 				.container-dashboard__content
 					ul.ui-components
-						
 						li
+							a(href="#!").pay-card
+								.pay-card__img
+									img(src="../img/visa.png", width="77" alt="img")
+								.pay-card__text Оплата картой
+							pre.
+								a(href="#!").pay-card
+									.pay-card__img
+										img(src="../img/visa.png", width="77" alt="img")
+									.pay-card__text Оплата картой
+						li
+							.pay-card__wrapper
+								a(href="#!").pay-card
+									.pay-card__img
+										img(src="../img/visa.png", width="77" alt="img")
+									.pay-card__text Оплата картой
+								a(href="#!").pay-card
+									.pay-card__img
+										svg.svg-envelop
+											use(xlink:href="../img/svg-sprite.svg#svgEnvelop")
+									.pay-card__text Получить счет
+								a(href="#!").pay-card
+									.pay-card__img
+										img(src="../img/GooglePay.png", width="105" alt="img")
+									.pay-card__text Google Pay
+								a(href="#!").pay-card
+									.pay-card__img
+										img(src="../img/ApplePay.png", width="105" alt="img")
+									.pay-card__text Apple Pay
+						
+						li(style="padding-top:40px;")
 							.badge 873 м
 							.badge.badge--color квартира
 							.badge.badge--white всего прав 5
@@ -32,7 +61,7 @@ html(lang="ru")
 								.badge 873 м
 								.badge.badge--color квартира
 								.badge.badge--white всего прав 5
-						li
+						li(style="padding-top:40px;")
 							.badge-group
 								.badge 873 м
 								.badge.badge--color 873 м
@@ -40,21 +69,21 @@ html(lang="ru")
 								.badge-group
 									.badge 873 м
 									.badge.badge--color 873 м
-						li
+						li(style="padding-top:40px;")
 							+icon-group('cart', 'Cart', 'В корзину')
 							pre.
 								+icon-group('cart', 'Cart', 'В корзину')
-						li
+						li(style="padding-top:40px;")
 							+menuItem('Каталог услуг', '#', '','cat', 'Cat')
 							pre.
 								+menuItem('Каталог услуг', '#', '','cat', 'Cat')
 						
 						
-						li
+						li(style="padding-top:40px;")
 							+price-block('120 456', '220 456')
 							pre.
 								+price-block('120 456', '220 456')
-						li
+						li(style="padding-top:40px;")
 							.add-information
 								.button-group-1
 									.button-group__top
@@ -74,7 +103,7 @@ html(lang="ru")
 										.button-group__top
 											.text-12 Объект проверки
 										+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
-						li
+						li(style="padding-top:40px;")
 							.form-order-card
 								.form-order-card__title
 									a(href="#")
@@ -113,7 +142,7 @@ html(lang="ru")
 												svg.svg-cart
 													use(xlink:href="../img/svg-sprite.svg#svgCart")
 												.text-12 Мой заказ
-						li
+						li(style="padding-top:40px;")
 							.form-order-card
 								.form-order-card__title
 									
@@ -134,7 +163,7 @@ html(lang="ru")
 									.form-order-card__footer
 										+button-flex('a', '#', 'button--disable', 'В корзину',  'cart', 'Cart')
 						
-						li
+						li(style="padding-top:40px;")
 							+text-card('ФИНАНСОВАЯ ГАРАНТИЯ СДЕЛКИ', 'Мы дадим финансовую гарантию безопасности сделки на всю сумму договора покупки')
 							pre.
 								+text-card('ФИНАНСОВАЯ ГАРАНТИЯ СДЕЛКИ', 'Мы дадим финансовую гарантию безопасности сделки на всю сумму договора покупки')

@@ -1,0 +1,60 @@
+.order-list{
+	&__item{
+		padding-top: 16px;
+	}
+	.marker-list {
+	
+			&:after{
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1L9 9L17 1' stroke='%23B5B5B5' stroke-width='2'/%3e%3c/svg%3e ");
+				width: 20px;
+				height: 8px;
+				top: 18px;
+				background-color: transparent;
+				background-size: contain;
+				background-repeat: no-repeat;
+
+			}
+		}
+		.verification-card__block+.verification-card__block{
+			margin-top: 12px;
+		}
+		
+}
+
+.order-list-card {
+	background: #FFFFFF;
+	/* Тень кнопки */
+
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+	border-radius: 4px;
+
+	label {
+		.icon-edit {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.acor-header{
+		position: relative;
+		padding-left: 40px;
+		color:#121212;
+		&:before{
+			content:'';
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='18' height='11' viewBox='0 0 18 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1L9 9L17 1' stroke='%23B5B5B5' stroke-width='2'/%3e%3c/svg%3e ");
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: transparent;
+			background-size: auto;
+			background-repeat: no-repeat;
+			background-position:center;
+		}
+	}
+	.acor-container-block
+	{padding-left: 0;
+		padding-right: 0;
+	}
+}

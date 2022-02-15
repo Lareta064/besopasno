@@ -1,3 +1,19 @@
+.icon-remove{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-size:auto;
+	background-position:center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	cursor:pointer;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z' fill='%23B5B5B5'/%3e%3c/svg%3e ");
+}
+.svg-envelop{
+	width: 86px;
+	height: 68px;
+	fill: transparent;
+}
 .icon-filter{
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='20' viewBox='0 0 22 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M21 1H1L9 10.46V17L13 19V10.46L21 1Z' stroke='%237C7C7C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
 	width: 24px;
@@ -256,6 +272,11 @@
 	width: 24px;
 	height: 24px;
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='22' viewBox='0 0 24 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10.8917 4.4895H4.72011C4.25245 4.4895 3.80394 4.66229 3.47325 4.96986C3.14257 5.27743 2.95679 5.69458 2.95679 6.12955V17.6099C2.95679 18.0449 3.14257 18.462 3.47325 18.7696C3.80394 19.0772 4.25245 19.25 4.72011 19.25H17.0634C17.531 19.25 17.9795 19.0772 18.3102 18.7696C18.6409 18.462 18.8267 18.0449 18.8267 17.6099V11.8697' stroke='%237C7C7C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M17.5043 3.2595C17.855 2.93327 18.3307 2.75 18.8268 2.75C19.3228 2.75 19.7985 2.93327 20.1493 3.2595C20.5 3.58573 20.6971 4.02818 20.6971 4.48954C20.6971 4.95089 20.5 5.39335 20.1493 5.71958L11.7735 13.5098L8.24683 14.3298L9.12849 11.0497L17.5043 3.2595Z' stroke='%237C7C7C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+	cursor:pointer;
+	display: inline-block;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .icon-home{
 	display: inline-block;

@@ -1,5 +1,12 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
-	<symbol id="svgShare" viewBox="0 0 16 16">
+	<symbol id="svgEnvelop"  viewBox="0 0 83 68">
+		<g>
+			<path d="M9.08889 1H73.8C78.2489 1 81.8889 4.72273 81.8889 9.27273V58.9091C81.8889 63.4591 78.2489 67.1818 73.8 67.1818H9.08889C4.64 67.1818 1 63.4591 1 58.9091V9.27273C1 4.72273 4.64 1 9.08889 1Z" stroke="#7C7C7C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M81.8889 8.35303L41.4444 30.4136L1 8.35303" stroke="#7C7C7C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+		</g>
+	</symbol>
+	
+	<symbol  viewBox="0 0 16 16">
 		<g>
 			<path d="M11.8347 5.20009C13.0313 5.20009 14.0014 4.25987 14.0014 3.10005C14.0014 1.94022 13.0313 1 11.8347 1C10.638 1 9.66797 1.94022 9.66797 3.10005C9.66797 4.25987 10.638 5.20009 11.8347 5.20009Z"  stroke-linecap="round" stroke-linejoin="round" />
 			<path d="M3.16669 10.0998C4.36332 10.0998 5.33338 9.15959 5.33338 7.99977C5.33338 6.83994 4.36332 5.89972 3.16669 5.89972C1.97006 5.89972 1 6.83994 1 7.99977C1 9.15959 1.97006 10.0998 3.16669 10.0998Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />

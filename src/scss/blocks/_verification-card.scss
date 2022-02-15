@@ -1,5 +1,5 @@
 .verification-card{
-	padding: 10px 15px;
+	padding: 20px 15px;
 	background: linear-gradient(180deg, #F7F7F7 0%, #F0F0F0 100%);
 
 	&__block-title {
@@ -25,4 +25,5 @@
 		}
 		.svg-group + .svg-group{margin-top: 4px;}
 	}
+	&__block-btn{padding-top: 12px;}
 }
