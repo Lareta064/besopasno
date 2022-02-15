@@ -1,0 +1,137 @@
+.report-card{
+	background: #F3F3F3;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	padding: 16px;
+	margin-top: 16px;
+	.title-16{
+		color: #121212;
+	}
+	&__header{
+		padding-bottom: 12px;
+		 .title-16{padding-bottom: 8px;}
+		 .text-14{
+			 max-width: 344px;
+			 span{font-family: $rm;}
+		 }
+	}
+	ul{
+		max-width: 420px;
+	}
+	li{
+		padding-top: 12px;
+		padding-bottom: 12px;
+		border-top: 1px solid #DEDEDE;
+		.text-14 span, .title-14 span {
+			color: $darkBlue;
+			font-family: $rm ;
+		}
+		&>*+*{margin-top: 8px;}
+	}
+	li:last-child{
+		padding-bottom: 0;
+	}
+}
+.report-nalog{
+	.report-card__header .title-16{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 12px;
+	}
+	.text-14 +.text-14{
+		color: #3F5867;
+		padding-top: 12px;
+	}
+}
+.report-zalog{
+	ul {
+		max-width: 100%;
+	}
+}
+.report-result-card{
+	display: flex;
+	padding: 16px;
+	align-items: center;
+	background: #F3F3F3;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+
+	.report-result_left{
+		flex-shrink:0;
+	} 
+	.report-result__right {
+		padding-left: 24px;
+		&>*+*{margin-top: 8px;}
+	}
+	.result-signal{
+		width: 88px;
+		height: 88px;
+		border-radius: 50%;
+		background-color: rgba(128, 188, 85, .35);
+		position: relative;
+		font-size: 20px;
+		font-weight: bold;
+		color:#fff;
+		text-align: center;
+		line-height: 88px;
+		span{
+			z-index: 4;
+			position: relative;
+			
+		}
+		&:before,&:after{
+			content:'';
+			width: 88%;
+			height: 88%;
+			border-radius: 50%;
+			background-color: rgba(128, 188, 85, .5);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+		}
+		&:before{
+			width: 74%;
+			height: 74%;
+			background-color: rgba(128, 188, 85, 1);
+			z-index: 3;
+		}
+		&--red{
+			background-color:rgba(255, 0, 46, .35);
+			&:before{
+				background-color: rgba(255, 0, 46, 1);
+			}
+			&:after{
+				background-color:rgba(255, 0, 46, .5);
+			}
+		}
+	}
+}
+.report-result-legend{
+	padding: 16px;
+	background: #F3F3F3;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	.text-16{
+		padding-bottom: 16px;
+	}
+	
+	&__block {
+		max-width: 370px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		font-size: 12px;
+		line-height: 1.5;
+		margin-left: -6px;
+		margin-right: -6px;
+		&>*{margin-left: 6px;margin-right: 6px;}
+	}
+}
+.finance-result{
+	.boxshadow-block__body{
+		&>*+*{margin-top: 16px;}
+	}
+} 

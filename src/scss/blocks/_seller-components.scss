@@ -38,4 +38,44 @@ p {
 }
 }
 
-
+.legend-green,
+.legend-red,
+.legend-brown,
+.legend-yellow {
+	position: relative;
+	padding-left: 12px;
+	display: inline-block;
+	&:before{
+		content:'';
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		top: 7px;
+	}
+}
+.legend-green {
+	color: $green;
+	&:before{
+		background-color: $green;
+	}
+}
+.legend-red {
+	color: #FF002E;
+	&:before{
+		background-color: #FF002E;
+	}
+}
+.legend-brown {
+	color: #B00020;
+	&:before{
+		background-color: #B00020;
+	}
+}
+.legend-yellow {
+	color: $yellow;
+	&:before{
+		background-color: $yellow;
+	}
+}

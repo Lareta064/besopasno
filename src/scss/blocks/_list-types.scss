@@ -142,3 +142,18 @@
 	margin-top: 16px;
 }
 }
+.marker-list--report{
+	li{padding-left: 40px;}
+	li:after{
+		top: 0;
+		
+		background-color: #EAB720;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_5190_49065)'%3e%3cpath d='M6.08009 2.61694L1.51932 10.2308C1.42529 10.3936 1.37553 10.5783 1.375 10.7663C1.37448 10.9543 1.4232 11.1392 1.51632 11.3026C1.60944 11.466 1.74371 11.6021 1.90578 11.6975C2.06784 11.7928 2.25206 11.8441 2.44009 11.8462H11.5616C11.7497 11.8441 11.9339 11.7928 12.0959 11.6975C12.258 11.6021 12.3923 11.466 12.4854 11.3026C12.5785 11.1392 12.6272 10.9543 12.6267 10.7663C12.6262 10.5783 12.5764 10.3936 12.4824 10.2308L7.92163 2.61694C7.82563 2.45869 7.69048 2.32785 7.52919 2.23705C7.36791 2.14624 7.18594 2.09854 7.00086 2.09854C6.81577 2.09854 6.6338 2.14624 6.47252 2.23705C6.31124 2.32785 6.17608 2.45869 6.08009 2.61694V2.61694Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M7 5.38463V7.53847' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M7 9.69231H7.00734' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_5190_49065'%3e%3crect width='12.9231' height='12.9231' fill='white' transform='translate(0.539062 0.538467)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position:center;
+	}
+}

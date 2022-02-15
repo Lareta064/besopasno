@@ -5,7 +5,7 @@ block content
 	//========gamburger-menu=========
 	include ../sections/_main-menu
 	//========top-menu=========
-	+header('Контакты','inner','#!')(class="page-header--inner page-header--light")
+	+header('Данные о собственнике','inner','#!')(class="page-header--inner page-header--light")
 	//======= шапка ======
 	.seller-header
 		.page-header
@@ -71,75 +71,51 @@ block content
 						
 					//======tabs content ======
 					.custom-tabs__content
-						.custom-tabs__content-block.ct-content--active(ct-content="1")
-							.custom-tabs__content-row
-								.title-20 Сводный отчёт
-							.custom-tabs__content-row
-								.check-object__title
-									.flex-wrapper
-										.title-upper Экспресс данные
-										.text-12 Всего записей
-								.check-object__express-results
-									+express-card('Суды','svg-warning','svgWarning', '','Есть открытые судебные разбирательства')
-									+express-card('Налоги','svg-warning','svgWarning','', 'Обнаружены налоговые задолжности')
-									+express-card('Долги','svg-warning','svgWarning','', 'Имеются задолжности перед третьими лицами')
-									+express-card('Организации','svg-warning','svgWarning','', 'Найдены зарегистрированные организации с пометкой “красный”')
-									+express-card('Розыск','svg-warning','svgWarning', 'status-yellow','Требуется уточнить обстоятельства розыска')
-									+express-card('ГБДД','svg-warning','svgWarning', 'status-yellow','Обнаружены наружения ПДД')
-									+express-card('Залоги','svg-warning','svgWarning', 'status-yellow','У владельца есть недвижимость в залоге')
-									+express-card('Паспорт','svg-warning','svgWarning', 'status-yellow','Паспорт закончил свой срок действия, требуется обновление')
-									+express-card('Арбитраж', 'svg-done','svgDone','status-green','Арбитражных дел не обнаружено')
-									+express-card('Дисквалификация', 'svg-done','svgDone','status-green','Владелец может подписывать документы без ограничений')
-									+express-card('Банкродство', 'svg-done','svgDone','status-green','В ближайшие 5 лет банкродство ФИЗ лица не проводилось')
-							
-							//======= карточка экспертная проверка =========
-							.custom-tabs__content-row.wrapper-visible-1199
-								.expert-review
-									.expert-review__body
-										.expert-review__img
-											.success-group.success-group--blue
-												.icon-doc
-												.check-success
-										.expert-review__text
-											.title-14 Экспертная проверка
-											.text-12 Вынесено экспертное заключение на основе анализа закрытых и открытых данных
-									.expert-review__btn
-										a(href="#!" download).group-download
-											svg.svg-download
-												use(xlink:href="../img/svg-sprite.svg#svgDownload")
-											span Загрузить PDF
-										
-										.link-group
-											a(href="#!")
-												svg.svg-email
-													use(xlink:href="../img/svg-sprite.svg#svgEmail")
-											a(href="#!")
-												svg.svg-share
-													use(xlink:href="../img/svg-sprite.svg#svgShare")
-							.custom-tabs__content-row
-								.title-upper Объекты собственника
-								.report-cards
-									+address-card
-									+address-card
-								.border-link Показать все объекты
-							
-							.custom-tabs__content-row
-								+text-card('ВНИМАНИЕ!', 'Для общей уверенности следует проводить комплесную проверку и объекта и собственников')
-								//====текстовая карточка =======
-							
-							.custom-tabs__content-row.w-100
-								.check-object__categories-title
-									.text-16 Другие варианты комплексной проверки
-								.categody-cards__wrapper.flex-wrapper
-									+category-card('Базовая проверка', '7 900', '33 450','p-117.html')
-									+category-card('Экспресс за 1 день!', '6 550', '33 450','p-117.html')(class="category-card--express")
-									+category-card('Стандартная экспертиза', '10 990', '33 450','p-117.html')(class="category-card--active")
-									+category-card('Стандартная экспертиза', '10 990', '33 450','p-117.html')
-						
+						//=============== 1 ============
+						.custom-tabs__content-block(ct-content="1")
+							include ../blocks/report-report
+						//=============== 2 ============
 						.custom-tabs__content-block(ct-content="2")
-							h1 jjjllll
+							include ../blocks/report-courts
+						//=============== 3 ============
 						.custom-tabs__content-block(ct-content="3")
-							h1 jjj;;;;
+							include ../blocks/report-arbitrage
+						//=============== 4 ============
+						.custom-tabs__content-block(ct-content="4")
+							include ../blocks/report-bankrot
+						//=============== 5 ============
+						.custom-tabs__content-block(ct-content="5")
+							include ../blocks/report-corrup
+						//=============== 6 ============
+						.custom-tabs__content-block(ct-content="6")
+							include ../blocks/report-organ
+						//=============== 7 ============
+						.custom-tabs__content-block(ct-content="7")
+							include ../blocks/report-fspp
+						//=============== 8 ============
+						.custom-tabs__content-block(ct-content="8")
+							include ../blocks/report-nalog
+						//=============== 9 ============
+						.custom-tabs__content-block(ct-content="9")
+							include ../blocks/report-zalog
+						//=============== 10 ============
+						.custom-tabs__content-block(ct-content="10")
+							include ../blocks/report-disqual
+						//=============== 11 ============
+						.custom-tabs__content-block(ct-content="11")
+							include ../blocks/report-terror
+						.custom-tabs__content-block(ct-content="12")
+							include ../blocks/report-interest
+						.custom-tabs__content-block(ct-content="13")
+							include ../blocks/report-passport
+						.custom-tabs__content-block.ct-content--active(ct-content="14")
+							include ../blocks/report-finance1
+						.custom-tabs__content-block(ct-content="15")
+							include ../blocks/report-finance2
+							
+
+	
+	
 	//========== footer ==========
 	include ../sections/_footer
 	

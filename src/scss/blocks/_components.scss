@@ -1,7 +1,10 @@
-.svg-group{
+.flex-title,.svg-group{
 	display: flex;
 	align-items:center;
 	svg + *{margin-left: 16px;}
+	span+span {
+		margin-left: 16px;
+	}
 }
 
 .icon-text {

@@ -25,3 +25,9 @@ mixin reestr-list(...items)
 				.text-16 #{item.text1}
 				span
 				.text-12 #{item.text2}
+
+mixin marker-list-report( ...items)
+	.marker-list.marker-list--report
+		ul
+			each item in items
+				li= item

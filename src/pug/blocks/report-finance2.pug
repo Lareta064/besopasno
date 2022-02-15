@@ -1,0 +1,31 @@
+//========== Финансовый Скоринг FICO ============
+.custom-tabs__content-row
+	.finance-result
+		.boxshadow-block
+			//======header block ======
+			.boxshadow-block__header.flex-wrapper
+				.boxshadow-block__header-left
+					.title-upper Финансовый Скоринг FICO
+				
+			//=======даже если нет потомков, этот див с классом boxshadow-block__body -  должен быть, так как через css  для этого дива в пустом виде указана минимальная высота Что бы сработал псевдокласс empty  , обязательно не должно быть пробела между открывающим и закрывающим дивами ===============
+			.boxshadow-block__body
+				.report-result-card
+					.report-result__left
+						.result-signal.result-signal--red
+							span 711
+					.report-result__right
+						.text-16 Плохой результат
+						.text-14 Ошибок и исключений нет, расчёт произведён
+				
+				.report-result-card
+					+marker-list-report('Просрочки по счетам', 'Демографические данные', 'Колличество счетов с просрочками' , 'Слишком много недавних запросов кредитной истории по субъекту')
+				
+				
+				.report-result-legend
+					.text-16 Легенда:
+					.report-result-legend__block
+						.legend-green До 1435 Хороший
+						.legend-yellow До 854 средний
+						.legend-red До 721 плохой
+						.legend-brown До 599 крайне плохой
+					
