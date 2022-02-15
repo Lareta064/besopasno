@@ -1,0 +1,142 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	//========gamburger-menu=========
+	include ../sections/_main-menu
+	//========top-menu=========
+	+header('Контакты','inner','#!')(class="page-header--inner page-header--light")
+	//======= шапка ======
+	.seller-header
+		.page-header
+			.container
+				+breadcrumbs(
+				{link: "#", text: 'Профиль'},
+				{link: "#", text: 'Список заказов'},
+				{link: "#", text: 'Проверка продавца'},
+				)
+				.flex-wrapper
+					.page-header__left
+						.page-header-title
+							.title-2 Иванов Иван Иванович
+						.page-header-text
+							.seller-info
+								p Год рождения: #[span 12.11.1987	]
+								p ИНН: #[span 644005983025]
+								p Регионы проверки:  #[span  23	](Краснодарский край)
+						.page-header-chips
+							.chips-warning
+								svg.svg-warning
+									use(xlink:href="../img/svg-sprite.svg#svgWarning")
+								.text-12 Высока верроятность однофамильцев
+					.page-header__right
+						img(src="../img/nofoto.jpg", width="120" alt="alt")
+	//======== content =======
+	.seller-content
+		.container
+			.seller-tabs
+				.custom-tabs(custom-tabs)
+					.custom-tabs__btns
+						+seller-tabs-btns(
+							{dataVal: 1, addClass: 'current', text: 'Отчёт' },
+							{dataVal: 2,  text: 'Суды' },
+							{dataVal: 3,  text: 'Арбитраж' },
+							{dataVal: 4,  text: 'Банкротства' },
+							{dataVal: 5,  text: 'Коррупция' },
+							{dataVal: 6,  text: 'Организации' },
+							{dataVal: 7,  text: 'ФССП' },
+							{dataVal: 8,  text: 'Налоги' },
+							{dataVal: 9,  text: 'Залоги' },
+							{dataVal: 10,  text: 'Дисквалификация' },
+							{dataVal: 11,  text: 'Терроризм' },
+							{dataVal: 12,  text: 'Лицом интересовались' },
+							{dataVal: 13,  text: 'Проверка паспорта' },
+							{dataVal: 14,  text: 'Финансовый Скоринг FICO' },
+							{dataVal: 15,  text: 'Финансовый Скоринг через ОКБ' },
+							)
+						
+						.custom-tabs__row.custom-tabs__row--hide-1023
+							a(href="p-131.html").expert-review
+								.expert-review__body
+									.expert-review__img
+										.success-group
+											.icon-doc
+											.check-success
+									.expert-review__text
+										.title-14 Экспертная проверка
+										.text-12 Будет произведен анализ открытых и закрытых данных и вынесено заключение
+								.expert-review__btn
+									+double-button('Заказать проверку', '2 999 ₽')(class="fz-16")
+						
+					.custom-tabs__content
+						.custom-tabs__content-block.ct-content--active(ct-content="1")
+							.custom-tabs__content-row
+								.check-object__title
+									.flex-wrapper
+										.title-upper Экспресс данные
+										.text-12 Всего записей
+								.check-object__express-results
+									+express-card('Розыск','svg-warning','svgWarning')
+									+express-card('Розыск','svg-warning','svgWarning')
+									+express-card('Розыск','svg-warning','svgWarning')
+									+express-card('Розыск','svg-warning','svgWarning')
+									+express-card('Розыск','svg-warning','svgWarning', 'status-yellow')
+									+express-card('Розыск', 'svg-done','svgDone','status-green')
+							
+							//======= карточка экспертная проверка =========
+							.custom-tabs__content-row.wrapper-visible-1023
+								.expert-review
+									.expert-review__body
+										.expert-review__img
+											.success-group.success-group--blue
+												.icon-doc
+												.check-success
+										.expert-review__text
+											.title-14 Экспертная проверка
+											.text-12 Вынесено экспертное заключение на основе анализа закрытых и открытых данных
+									.expert-review__btn
+										a(href="#!" download).group-download
+											svg.svg-download
+												use(xlink:href="../img/svg-sprite.svg#svgDownload")
+											span Загрузить PDF
+										
+										.link-group
+											a(href="#!")
+												svg.svg-email
+													use(xlink:href="../img/svg-sprite.svg#svgEmail")
+											a(href="#!")
+												svg.svg-share
+													use(xlink:href="../img/svg-sprite.svg#svgShare")
+							.custom-tabs__content-row
+								.title-upper Объекты собственника
+								.report-cards
+									+address-card
+									+address-card
+								.border-link Показать все объекты
+							
+							.custom-tabs__content-row
+								+text-card('ВНИМАНИЕ!', 'Для общей уверенности следует проводить комплесную проверку и объекта и собственников')
+								//====текстовая карточка =======
+							
+							.custom-tabs__content-row.w-100
+								.check-object__categories-title
+									.text-16 Другие варианты комплексной проверки
+								.categody-cards__wrapper.flex-wrapper
+									+category-card('Базовая проверка', '7 900', '33 450','p-117.html')
+									+category-card('Экспресс за 1 день!', '6 550', '33 450','p-117.html')(class="category-card--express")
+									+category-card('Стандартная экспертиза', '10 990', '33 450','p-117.html')(class="category-card--active")
+									+category-card('Стандартная экспертиза', '10 990', '33 450','p-117.html')
+						
+						.custom-tabs__content-block(ct-content="2")
+							h1 jjjllll
+						.custom-tabs__content-block(ct-content="3")
+							h1 jjj;;;;
+	//========== footer ==========
+	include ../sections/_footer
+	
+	
+	
+	
+block variables
+	-var title = "Продавец";
+	- var bodyCl = "seller"

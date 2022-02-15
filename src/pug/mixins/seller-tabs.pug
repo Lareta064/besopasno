@@ -1,0 +1,6 @@
+
+//======переключатели на странице продавца табы =============
+mixin seller-tabs-btns( ...items)
+	each item in items
+		p(ct-btn=""+ item.dataVal class=(item.addClass =='current' ? 'custom-tab--current' : '') )
+			span !{item.text}

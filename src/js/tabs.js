@@ -12,11 +12,12 @@ document.addEventListener("DOMContentLoaded", function (){
 					for(let j=0; j< ctBtns.length;j++){
 						if(j!=i){
 							 ctBtns[j].classList.remove('custom-tab--current');
+							 
 						}
 						else{
 							const thisData =  this.getAttribute('ct-btn');
 							 this.classList.add('custom-tab--current');
-						
+							 
 
 							for(let content of ctContents){
 								content.classList.remove('ct-content--active');

@@ -14,3 +14,33 @@
 	}
 	.page-header-chips{padding-top: 20px;}
 }
+.seller-content{
+	position: relative;
+	min-height: 470px;
+	overflow: hidden;
+	
+	.check-object__title,
+	.express-card {
+		max-width: 712px;;
+	}
+
+
+	@media(min-width: 1024px){
+		display: flex;
+		.container{
+			min-height: 100%;
+		}
+		.seller-tabs{
+			min-height: 100%;
+			display: flex;
+		}
+	}
+}
+.report-cards{
+	.address-card{
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.01),
+		0px 4px 8px rgba(0, 0, 0, 0.02),
+		0px 1px 12px rgba(0, 0, 0, 0.12)
+	}
+	.address-card+.address-card{margin-top: 16px;}
+}

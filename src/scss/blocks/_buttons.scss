@@ -298,3 +298,24 @@
 	height: 40px;
 	line-height: 40px;
 }
+.border-link{
+	font-family: $rm;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: $darkBlue;
+	padding-left: 24px;
+	padding-right: 24px;
+	border: 1px solid #DEDEDE;
+	border-radius: 4px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	cursor:pointer;
+	transition: .3s;
+	margin-top: 20px;
+	&:hover{
+		border-color: $darkBlue;
+	}
+}

@@ -205,7 +205,11 @@
 	&__text{padding-left: 16px;}
 	&__btn{
 		.button{white-space: nowrap;}
+		display: flex;
+		align-items:center;
+		justify-content: space-between;
 	}
+	a:hover{opacity: .7;}
 }
 .text-card {
 	padding: 12px 24px 16px;
