@@ -44,7 +44,7 @@ mixin legend-item(text, addClass)
 		| #{text}
 	
 //- карточка экспресс-данные
-mixin express-card(title, svgcl, svgid, cl)
+mixin express-card(title, svgcl, svgid, cl, text="Требуется уточнить обстоятельства розыска")
 	.express-card(class=(cl ? " "+ cl : ""))
 		.express-card__left
 			svg(class=""+ svgcl)
@@ -53,7 +53,7 @@ mixin express-card(title, svgcl, svgid, cl)
 			.express-card-type
 				.text-12 #{title}
 			.express-card__task
-				.text-12 Требуется уточнить обстоятельства розыска
+				.text-12 #{text}
 
 		.express-card__right
 			span 2

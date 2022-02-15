@@ -14,7 +14,14 @@
 	}
 	.page-header-chips{
 		padding-top: 16px;
-		padding-bottom: 16px;
+		
+	}
+	@media(max-width:767px){
+		.page-header{
+		height: auto;
+		min-height: 182px;
+		padding-top: 24px;
+		padding-bottom: 24px;}
 	}
 }
 .seller-content{
