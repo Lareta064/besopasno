@@ -12,7 +12,10 @@
 			object-fit: contain;
 		}
 	}
-	.page-header-chips{padding-top: 20px;}
+	.page-header-chips{
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
 }
 .seller-content{
 	position: relative;

@@ -141,7 +141,12 @@ input[type="submit"] {
 	justify-content: space-between;
 	align-items: center;
 }
-
+.flex-wrapper.flex-wrapper--reverse-mobile{
+	@media(max-width:767px){
+		flex-direction: row-reverse;
+		.page-header__left{padding-left: 16px;}
+	}
+}
 .wrapper-608 {
 	max-width: 608px;
 }
@@ -175,6 +180,13 @@ input[type="submit"] {
 	display: block;
 	@media(max-width:1023px){
 		display: none;
+	}
+}
+.wrapper-visible-1199{
+	display: none;
+
+	@media(max-width:1199px) {
+		display: block;
 	}
 }
 .p-40 {

@@ -15,7 +15,7 @@ block content
 				{link: "#", text: 'Список заказов'},
 				{link: "#", text: 'Проверка продавца'},
 				)
-				.flex-wrapper
+				.flex-wrapper.flex-wrapper--reverse-mobile
 					.page-header__left
 						.page-header-title
 							.title-2 Иванов Иван Иванович
@@ -24,13 +24,14 @@ block content
 								p Год рождения: #[span 12.11.1987	]
 								p ИНН: #[span 644005983025]
 								p Регионы проверки:  #[span  23	](Краснодарский край)
-						.page-header-chips
-							.chips-warning
-								svg.svg-warning
-									use(xlink:href="../img/svg-sprite.svg#svgWarning")
-								.text-12 Высока верроятность однофамильцев
+						
 					.page-header__right
 						img(src="../img/nofoto.jpg", width="120" alt="alt")
+				.page-header-chips
+					.chips-warning
+						svg.svg-warning
+							use(xlink:href="../img/svg-sprite.svg#svgWarning")
+						.text-12 Высока верроятность однофамильцев
 	//======== content =======
 	.seller-content
 		.container
@@ -55,7 +56,7 @@ block content
 							{dataVal: 15,  text: 'Финансовый Скоринг через ОКБ' },
 							)
 						
-						.custom-tabs__row.custom-tabs__row--hide-1023
+						.custom-tabs__row.custom-tabs__row--hide-1199
 							a(href="p-131.html").expert-review
 								.expert-review__body
 									.expert-review__img
@@ -84,7 +85,7 @@ block content
 									+express-card('Розыск', 'svg-done','svgDone','status-green')
 							
 							//======= карточка экспертная проверка =========
-							.custom-tabs__content-row.wrapper-visible-1023
+							.custom-tabs__content-row.wrapper-visible-1199
 								.expert-review
 									.expert-review__body
 										.expert-review__img
