@@ -1,0 +1,61 @@
+extends ../layouts/layout.pug
+
+block content
+	
+	//========gamburger-menu=========
+	include ../sections/_main-menu
+	//========top-menu=========
+	+header('Корзина','inner','#!')(class="page-header--inner page-header--light")
+	.basket-page.page-grid
+		.page-grid__left
+			include ../sections/_basket-page-header
+			.basket-page-content
+				.container
+					//====окно с рекомендациями =======
+					.basket-page-block
+						.page-grid__right
+							.right-modal.right-modal--active
+								.right-modal-content
+									.right-modal__header
+										.title-20 Оформление заказа
+									.right-modal__body
+										.title-upper.pb-24 Выберите способ оплаты
+										.pay-card__wrapper
+											a(href="#!").pay-card
+												.pay-card__img
+													img(src="../img/visa.png", width="77" alt="img")
+												.pay-card__text Оплата картой
+											a(href="#!").pay-card
+												.pay-card__img
+													svg.svg-envelop
+														use(xlink:href="../img/svg-sprite.svg#svgEnvelop")
+												.pay-card__text Получить счет
+											a(href="#!").pay-card
+												.pay-card__img
+													img(src="../img/GooglePay.png", width="105" alt="img")
+												.pay-card__text Google Pay
+											a(href="#!").pay-card
+												.pay-card__img
+													img(src="../img/ApplePay.png", width="105" alt="img")
+												.pay-card__text Apple Pay
+											
+									
+									.right-modal__footer
+										.button-group-1
+											.button-group__top
+												.text-12 6 комплектов документов 
+												.title-20 Итог: 23 000 ₽
+											+button-flex('button', '', 'button--reverse button--blue', 'Оформить заказ',  'chevron', 'Chevron')
+					
+					
+					
+					include ../blocks/basket-page-body
+
+
+	//========== footer ==========
+	include ../sections/_footer
+	
+	
+block variables
+	-var title = "Корзина";
+	- var bodyCl = "body-flex basket-page"

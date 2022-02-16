@@ -300,3 +300,9 @@
 	}
 
 }
+.pay-card__wrapper{
+	display: grid;
+	grid-template-columns: 136px 136px;
+	column-gap: 16px;
+	row-gap:16px;
+}

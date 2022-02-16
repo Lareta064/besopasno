@@ -1,0 +1,175 @@
+//========== Корзина ============
+.order-list
+	//========= карточка одного комплекта заказа =======================
+	.order-list-card
+		.accor-container
+			.acor-container-block
+				input(id="order1" type='checkbox' name='order1' checked)
+				label(for='order1')
+					.acor-header.title-16 Комплект документов 1
+					.link-group
+						a(href="").icon-edit
+						.icon-remove
+				//===========состав заказа ==================
+				.acor-body
+					//=============== один блок заказа ==============
+					.order-list__item
+						.marker-list.marker-list--brown.marker-list--grid
+							ul
+								li.marker-list__accor
+									.accor-container.accor-container--inner
+										.acor-container-block
+											input(id="order-item1" type='checkbox' name='order-item1' )
+											label(for='order-item1')
+												.acor-header.title-14 Стандартная экспертиза
+												.title-14 12 500 руб
+											.acor-body
+												ul
+													li ЕГРН с ЭЦП Росреестра
+													li Материнский капитал
+													li Претензии по объекту МО
+													li Оперативная справка
+													li ЕГРН с ЭЦП Росреестра
+													li Материнский капитал
+								li
+									.title-14  Проверка иностранной доверенности
+									.title-14  2 390₽
+								li 
+									.title-14  Проверка иностранной доверенности
+									.title-14  2 390₽
+							
+					//=============== один блок заказа ==============
+					.order-list__item
+						.verification-card
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Объект проверки
+									.icon-edit
+								.verification-card__block-body
+									+icon-group('house', 'House', 'Улица Юности дом 8')
+								.verification-card__block-btn
+									+menuItem('Указать продавца', '#', 'button-tr button-tr--info','plus', 'Plus')
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Владельцы
+									.icon-edit
+								.verification-card__block-btn
+									+menuItem('указать владельца', '#', 'button-tr button-tr--info','plus', 'Plus')
+								.verification-card__block-body
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+					//=============== один блок заказа ==============
+					.order-list__item
+						.verification-card
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Объект проверки
+									.icon-edit
+								.verification-card__block-body
+									+icon-group('house', 'House', 'Улица Юности дом 8')
+								
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Владельцы
+									.icon-edit
+								
+								.verification-card__block-body
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+		//=============== итоговая сумма заказа ==============
+		.order-card__total
+			.title-16 Всего на сумму: 23 000 ₽
+
+	//========= карточка одного комплекта заказа =======================
+	.order-list-card
+		.accor-container
+			.acor-container-block
+				input(id="order2" type='checkbox' name='order2' checked)
+				label(for='order2')
+					.acor-header.title-16 Комплект документов 2
+					.link-group
+						a(href="").icon-edit
+						.icon-remove
+				//===========состав заказа ==================
+				.acor-body
+					//=============== один блок заказа ==============
+					.order-list__item
+						.order-list__item
+						.verification-card
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Объект проверки
+									.icon-edit
+								.verification-card__block-body
+									+icon-group('house', 'House', 'Улица Юности дом 8')
+								
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Владельцы
+									.icon-edit
+								
+								.verification-card__block-body
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+
+	//========= карточка одного комплекта заказа =======================
+	.order-list-card
+		.accor-container
+			.acor-container-block
+				input(id="order3" type='checkbox' name='order3' checked)
+				label(for='order3')
+					.acor-header.title-16 Комплект документов 3
+					.link-group
+						a(href="").icon-edit
+						.icon-remove
+				//===========состав заказа ==================
+				.acor-body
+					//=============== один блок заказа ==============
+					.order-list__item
+						.marker-list.marker-list--brown.marker-list--grid
+							ul
+								li.marker-list__accor
+									.accor-container.accor-container--inner
+										.acor-container-block
+											input(id="order-item1" type='checkbox' name='order-item1' )
+											label(for='order-item1')
+												.acor-header.title-14 Стандартная экспертиза
+												.title-14 12 500 руб
+											.acor-body
+												ul
+													li ЕГРН с ЭЦП Росреестра
+													li Материнский капитал
+													li Претензии по объекту МО
+													li Оперативная справка
+													li ЕГРН с ЭЦП Росреестра
+													li Материнский капитал
+								li
+									.title-14  Проверка иностранной доверенности
+									.title-14  2 390₽
+								li 
+									.title-14  Проверка иностранной доверенности
+									.title-14  2 390₽
+
+					//=============== один блок заказа ==============
+					.order-list__item
+						.order-list__item
+						.verification-card
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Объект проверки
+									.icon-edit
+								.verification-card__block-body
+									+icon-group('house', 'House', 'Улица Юности дом 8')
+								
+							.verification-card__block
+								.verification-card__block-title
+									.text-12 Владельцы
+									.icon-edit
+								
+								.verification-card__block-body
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
