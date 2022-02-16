@@ -49,14 +49,14 @@
 							])
 						.complect-card__footer
 							.complect-card__footer--desk
-								.button.double-button(frame-btn="enter-object-data")
+								.button.double-button(frame-btn="identify-user")
 									.double-button__left
 										+icon-group('cart', 'Cart', 'В корзину')
 									.double-button__right
 										+price-block('120 456', '220 456')
 							
 							.complect-card__footer--mob
-								.product-cart-btn(frame-btn="enter-object-data")
+								.product-cart-btn(frame-btn="identify-user")
 									.product-cart-btn__left
 										svg.svg-cart
 											use(xlink:href="../img/svg-sprite.svg#svgCart")
@@ -83,3 +83,7 @@
 		
 	//=======мод окно, ввод данных об объекте ========
 	include ../blocks/modal-2
+	include ../blocks/modal-5
+	include ../blocks/modal-6
+	include ../blocks/modal-7
+	include ../blocks/modal-8

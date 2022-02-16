@@ -1,5 +1,6 @@
 .modal-frame
-	.modal-close.btn-close
+	+mobile-header('Напишите нам')
+	.modal-close.btn-close(frame-close)
 		svg.svg-close
 			use(xlink:href="../img/svg-sprite.svg#svgClose")
 	.modal-frame-content

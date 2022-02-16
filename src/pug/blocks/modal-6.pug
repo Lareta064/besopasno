@@ -1,6 +1,7 @@
 
-.modal-frame.modal-frame--step1
-	.modal-close.btn-close
+.modal-frame.modal-frame--step1(frame-modal="enter-user-phone")
+	+mobile-header-logo('Авторизация')
+	.modal-close.btn-close(frame-close)
 		svg.svg-close
 			use(xlink:href="../img/svg-sprite.svg#svgClose")
 	.modal-frame-content

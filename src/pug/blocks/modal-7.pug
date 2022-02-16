@@ -1,6 +1,7 @@
 
-.modal-frame.modal-frame--step2
-	.modal-close.btn-close
+.modal-frame.modal-frame--step2(frame-modal="send-sms")
+	+mobile-header-logo('Авторизация')
+	.modal-close.btn-close(frame-close)
 		svg.svg-close
 			use(xlink:href="../img/svg-sprite.svg#svgClose")
 	.modal-frame-content
@@ -14,7 +15,7 @@
 
 	.modal-frame__footer
 		.container-slim
-			+button-flex('button', '', 'button--reverse button--blue', 'Отправить SMS',  'chevron', 'Chevron')
+			+button-flex('button', '', 'button--reverse button--blue', 'Отправить SMS',  'chevron', 'Chevron')(frame-btn="user-confirm")
 	
 	.login-social
 		.text-14 Вход через месенджер
