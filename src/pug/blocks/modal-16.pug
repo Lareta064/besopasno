@@ -1,5 +1,6 @@
 //========= модальное Способ оплаты =========
-.modal-frame(frame-btn="success-pay")
+.modal-frame(frame-modal="payment-method")
+	+mobile-header('Cпособ оплаты')
 	.modal-close.btn-close(frame-close)
 		svg.svg-close
 			use(xlink:href="../img/svg-sprite.svg#svgClose")
@@ -30,4 +31,4 @@
 					
 		.modal-frame__footer.modal-frame__footer--abs
 			.container-slim
-				+button-flex('button', '', 'button--reverse button--blue', 'Продолжить',  'chevron', 'Chevron')
+				+button-flex('button', '', 'button--reverse button--blue', 'Продолжить',  'chevron', 'Chevron')(frame-btn="success-pay")

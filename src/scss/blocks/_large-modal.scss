@@ -33,16 +33,22 @@
 .modal-large.visible {
 	transform: translateY(0);
 }
-.service-modal {
-	transform: translateY(110%);
 	.header--mini {
 		display: none;
 	}
 
-	@media(max-width:1023px) {
+	@media(max-width:767px) {
 		.header--mini {
 			display: block;
 			z-index: 5;
+		}
+	}
+.service-modal {
+	transform: translateY(110%);
+	
+	@media(max-width:1023px) {
+		.header--mini {
+			display: block;
 		}}
 }
 

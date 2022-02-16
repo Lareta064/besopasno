@@ -113,6 +113,10 @@ document.addEventListener("DOMContentLoaded", function (){
 		const modalFramesClose = document.querySelectorAll('[frame-close]');
 		for(let item of modalFramesOpen){
 			item.addEventListener('click', function(e){
+				for(let item of  modalFrames){
+					item.classList.remove('visible');
+					bodyEl.classList.remove('noscroll');
+				}
 				e.preventDefault();
 				const itemAttr = item.getAttribute('frame-btn');
 				for(let frame of modalFrames){

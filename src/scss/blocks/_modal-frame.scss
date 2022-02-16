@@ -184,6 +184,9 @@
 	&.visible{
 		transform: translateX(0);
 	}
+	@media(max-width:767px){
+		max-width: 100%;
+	}
 }
 .modal-frame--user{
 	.modal-frame__text {
@@ -232,4 +235,11 @@
 		border-bottom: 1px solid #b5b5b5;
 	}
 
+}
+.header.header--mini{z-index: 10;}
+.modal-frame .header--mini{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }

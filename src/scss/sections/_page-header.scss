@@ -89,13 +89,13 @@
 			flex-direction: column;
 		}
 
-		&-title {
-			display: none;
+		// &-title {
+		// 	display: none;
 
-			&+* {
-				margin-top: 0;
-			}
-		}
+		// 	&+* {
+		// 		margin-top: 0;
+		// 	}
+		// }
 
 		&__left {
 			width: 100%;
@@ -114,4 +114,13 @@
 		}
 	}
 
+}
+.express-page .page-header-title{
+	@media(max-width:767px){
+		display: none;
+
+		&+* {
+			margin-top: 0;
+		}
+	}
 }

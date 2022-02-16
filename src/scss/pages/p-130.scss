@@ -1,6 +1,11 @@
 .seller-header{
 	
-	.title-2{margin-bottom: 0;}
+	.title-2{
+		margin-bottom: 0;
+		@media(max-width:1023px){
+			font-size: 20px;
+		}
+	}
 	.flex-header{
 		align-items: flex-end;
 	}
@@ -10,6 +15,9 @@
 			width: 120px;
 			height: 152px;
 			object-fit: contain;
+		}
+		@media(max-width:767px){
+			width: 64px;
 		}
 	}
 	.page-header-chips{
@@ -21,7 +29,11 @@
 		height: auto;
 		min-height: 182px;
 		padding-top: 24px;
-		padding-bottom: 24px;}
+		padding-bottom: 24px;
+		&-title{
+			padding-bottom: 4px;
+		}
+	}
 	}
 }
 .seller-content{
