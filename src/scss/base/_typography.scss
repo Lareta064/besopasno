@@ -84,8 +84,11 @@
 	font-size: 0.875rem;
 	line-height: 1rem;
 	letter-spacing: 0.75px;
-	// text-transform: uppercase;
+	
 	color: #7C7C7C;
+	@media(max-width:767px){
+		letter-spacing: .1px;
+	}
 }
 .text-14{font-family: $rr;}
 .title-20{

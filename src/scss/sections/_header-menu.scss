@@ -19,6 +19,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		@media(max-width:1023px){
+			.header-logo .title-20{text-align: center;}
+		}
 	}
 
 	&-title {

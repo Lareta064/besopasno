@@ -150,6 +150,9 @@ input[type="submit"] {
 .wrapper-608 {
 	max-width: 608px;
 }
+.nowrap-item{
+	white-space: nowrap;
+}
 .w-100{
 	width: 100%!important;
 	max-width: 100% !important;
@@ -237,8 +240,9 @@ input[type="submit"] {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	header{flex-shrink:0;}
 	.footer{
-
+		flex-shrink:0;
 		@media(min-width:1024px){
 			&-menu{
 				width: calc(100% - 200px);

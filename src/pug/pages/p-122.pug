@@ -5,7 +5,7 @@ block content
 	//========gamburger-menu=========
 	include ../sections/_main-menu
 	//========top-menu=========
-	+header('Корзина','inner','#!')(class="page-header--inner page-header--light")
+	+header('Корзина','inner','#!')(class="page-header--inner")
 	.basket-page.page-grid
 		.page-grid__left
 			include ../sections/_basket-page-header
@@ -14,7 +14,7 @@ block content
 					//====окно с рекомендациями =======
 					.basket-page-block
 						.page-grid__right
-							.right-modal.right-modal--active
+							.right-modal.right-modal--active.right-modal--static.right-modal--desktop
 								.right-modal-content
 									.right-modal__header
 										.title-20 Оформление заказа
@@ -45,16 +45,24 @@ block content
 											.button-group__top
 												.text-12 6 комплектов документов 
 												.title-20 Итог: 23 000 ₽
-											+button-flex('button', '', 'button--reverse button--blue', 'Оформить заказ',  'chevron', 'Chevron')
+											+button-flex('button', '', 'button--reverse button--blue', 'Оформить заказ',  'chevron', 'Chevron')(frame-btn="success-pay")
 					
-					
-					
+					.basket-page-title.pb-24
+						.title-upper Состав заказа
 					include ../blocks/basket-page-body
 
-
+	//======Кнопка - фиксированная внизу на моб версии, открывает страницу выбора оплаты ===========
+	.mobile-fixed-btn
+		.button-group-1
+			.button-group__top
+				.text-12 6 комплектов документов
+				.title-20 Итог: 23 000 ₽
+			+button-flex('button', '', 'button--reverse button--blue', 'Оформить заказ',  'chevron', 'Chevron')(frame-btn="success-pay")
+	
 	//========== footer ==========
 	include ../sections/_footer
-	
+	include ../blocks/modal-10
+	include ../blocks/modal-16
 	
 block variables
 	-var title = "Корзина";

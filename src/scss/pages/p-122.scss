@@ -1,9 +1,16 @@
 .basket-page-content{
 	padding-top: 32px;
 	padding-bottom: 64px;
+	@media(max-width:1023px){
+		background: #F3F3F3;
+	
+	}
 }
 .basket-page__header .page-header{
 	min-height: unset;
 	background: #fff;
 	padding-bottom: 0;
+	&-title{
+		padding-bottom: 0;
+	}
 }

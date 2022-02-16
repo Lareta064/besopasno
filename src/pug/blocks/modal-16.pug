@@ -1,0 +1,33 @@
+//========= модальное Способ оплаты =========
+.modal-frame(frame-btn="success-pay")
+	.modal-close.btn-close(frame-close)
+		svg.svg-close
+			use(xlink:href="../img/svg-sprite.svg#svgClose")
+		
+	.modal-frame-content
+		.container-slim
+			.modal-frame__text
+				.title-upper.pb-24 Выберите способ оплаты
+				.pay-card__wrapper
+					a(href="#!").pay-card
+						.pay-card__img
+							img(src="../img/visa.png", width="77" alt="img")
+						.pay-card__text Оплата картой
+					a(href="#!").pay-card
+						.pay-card__img
+							svg.svg-envelop
+								use(xlink:href="../img/svg-sprite.svg#svgEnvelop")
+						.pay-card__text Получить счет
+					a(href="#!").pay-card
+						.pay-card__img
+							img(src="../img/GooglePay.png", width="105" alt="img")
+						.pay-card__text Google Pay
+					a(href="#!").pay-card
+						.pay-card__img
+							img(src="../img/ApplePay.png", width="105" alt="img")
+						.pay-card__text Apple Pay
+					
+					
+		.modal-frame__footer.modal-frame__footer--abs
+			.container-slim
+				+button-flex('button', '', 'button--reverse button--blue', 'Продолжить',  'chevron', 'Chevron')

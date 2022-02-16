@@ -22,7 +22,7 @@
 											input(id="order-item1" type='checkbox' name='order-item1' )
 											label(for='order-item1')
 												.acor-header.title-14 Стандартная экспертиза
-												.title-14 12 500 руб
+												.title-14.nowrap-item 12 500 руб
 											.acor-body
 												ul
 													li ЕГРН с ЭЦП Росреестра
@@ -33,10 +33,10 @@
 													li Материнский капитал
 								li
 									.title-14  Проверка иностранной доверенности
-									.title-14  2 390₽
+									.title-14.nowrap-item  2 390₽
 								li 
 									.title-14  Проверка иностранной доверенности
-									.title-14  2 390₽
+									.title-14.nowrap-item  2 390₽
 							
 					//=============== один блок заказа ==============
 					.order-list__item
@@ -80,7 +80,7 @@
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
 		//=============== итоговая сумма заказа ==============
 		.order-card__total
-			.title-16 Всего на сумму: 23 000 ₽
+			.title-16.nowrap-item Всего на сумму: 23 000 ₽
 
 	//========= карточка одного комплекта заказа =======================
 	.order-list-card
@@ -114,12 +114,15 @@
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+		//=============== итоговая сумма заказа ==============
+		.order-card__total
+			.title-16.nowrap-item Всего на сумму: 23 000 ₽
 
 	//========= карточка одного комплекта заказа =======================
 	.order-list-card
 		.accor-container
 			.acor-container-block
-				input(id="order3" type='checkbox' name='order3' checked)
+				input(id="order3" type='checkbox' name='order3')
 				label(for='order3')
 					.acor-header.title-16 Комплект документов 3
 					.link-group
@@ -134,10 +137,10 @@
 								li.marker-list__accor
 									.accor-container.accor-container--inner
 										.acor-container-block
-											input(id="order-item1" type='checkbox' name='order-item1' )
-											label(for='order-item1')
+											input(id="order-item2" type='checkbox' name='order-item2' )
+											label(for='order-item2')
 												.acor-header.title-14 Стандартная экспертиза
-												.title-14 12 500 руб
+												.title-14.nowrap-item 12 500 руб
 											.acor-body
 												ul
 													li ЕГРН с ЭЦП Росреестра
@@ -148,10 +151,10 @@
 													li Материнский капитал
 								li
 									.title-14  Проверка иностранной доверенности
-									.title-14  2 390₽
+									.title-14.nowrap-item  2 390₽
 								li 
 									.title-14  Проверка иностранной доверенности
-									.title-14  2 390₽
+									.title-14.nowrap-item  2 390₽
 
 					//=============== один блок заказа ==============
 					.order-list__item
@@ -173,3 +176,6 @@
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
 									+icon-group('seller', 'Seller', 'Иванов Иван Иванович')
+		//=============== итоговая сумма заказа ==============
+		.order-card__total
+			.title-16.nowrap-item Всего на сумму: 23 000 ₽
